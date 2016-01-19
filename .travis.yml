@@ -7,8 +7,6 @@ install: "pip install numpy matplotlib"
 script: doctests
 
 install:
-  - sudo add-apt-repository python-opencv
-  - sudo apt-get update
   - sudo apt-get install python-opencv
 
 sudo: required
