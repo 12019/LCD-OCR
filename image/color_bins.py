@@ -2,6 +2,7 @@ import numpy as np
 import cv2
 
 from utils.utils import Utils
+from coordinates import Coordinates
 
 
 class ColorBins:
@@ -9,9 +10,10 @@ class ColorBins:
     >>> arr = cv2.imread("./img/tests/one_line_lcd.jpg", 0)
     >>> bins = ColorBins(arr, 10, ColorBins.ORIENTATION_HORIZONTAL)
     >>> bins.set_desaturation_params()
-    >>> print list(bins.find_ranges(200))
-    [(258.07, 920.9300000000001)]
-    >>> # bins.show()
+    >>> basis = Coordinates.from_ndarray(arr)
+    >>> print list(bins.find_areas(basis, 127))
+    [(0:572, 258:920)]
+    >>> bins.debug()
     """
     image = None
     bins_count = -1
@@ -29,7 +31,7 @@ class ColorBins:
         self.bins_count = count
         self.orientation = orientation
         self._set_interpolation_type(interpolation_type)
-        measurement = self.image.shape[1] if orientation else self.image.shape[0]
+        measurement = self.image.shape[0] if orientation == self.ORIENTATION_VERTICAL else self.image.shape[1]
         self.compression = 1.0 * measurement / self.bins_count
 
     def _set_interpolation_type(self, interpolation_type=cv2.INTER_AREA):
@@ -69,17 +71,26 @@ class ColorBins:
             # print 'scaled:', left, right
             yield left_scaled, right_scaled
 
-    def find_ranges(self, thresholding_intensity=127, overflow_percent=0.03):
+    def _convert_ranges_into_coordinates(self, basis, ranges):
+        for left_scaled, right_scaled in ranges:
+            if self.orientation is self.ORIENTATION_VERTICAL:
+                yield Coordinates(left_scaled, right_scaled, basis.left, basis.right)
+            else:
+                yield Coordinates(basis.top, basis.bottom, left_scaled, right_scaled)
+
+    def find_areas(self, basis, thresholding_intensity=127, overflow_percent=0.03):
         """
+        :param basis:   an instance of Coordinates
         :param thresholding_intensity:  0 to 255
         :param overflow_percent:    0 to 1
         :return:     [(10, 100), (150, 300)]
         """
         self._set_thresholding_intensity(thresholding_intensity)
         r = self._split_bins_into_ranges()
-        return self._scale_ranges(r, overflow_percent)
+        s = self._scale_ranges(r, overflow_percent)
+        return self._convert_ranges_into_coordinates(basis, s)
 
-    def debug(self, window_title):
+    def debug(self, window_title="Color Bins"):
         # colored, monochrome and vector
         assert len(self.color_bins), "Run other methods first"
         linspace = np.linspace(0, 255, 255)

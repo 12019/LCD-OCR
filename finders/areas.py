@@ -2,6 +2,8 @@ import cv2
 
 from image.color_bins import ColorBins
 from image.image import Image
+from image.coordinates import Coordinates
+from image.outline import Outline
 
 
 class DigitsAreaFinder:
@@ -17,16 +19,10 @@ class DigitsAreaFinder:
     >>> r = DigitsAreaFinder(i)
     >>> e = list(r.extract())
     >>> e
-    [(121.929, 1009.371)]
-    >>> r.debug("before loop")
-    >>> for area in e:
-    ...     print area
-    ...     # todo save state
-    ...     i.crop(0, 0, area[0], area[1])
-    ...     i.draw_outline()
-    ...     i.reset()
-    ...     # print "inside loop", r.debug("inside loop")
-    >>> r.debug("after loop")
+    [(0:495, 121:1009)]
+    >>> # r.debug()
+    >>> o = Outline(img, e)
+    >>> o.show()
     """
     img = bins = None
     bins_count = 10
@@ -38,13 +34,11 @@ class DigitsAreaFinder:
     def extract(self):
         self.bins = self.img.get_color_bins_object(10, ColorBins.ORIENTATION_HORIZONTAL)
         self.bins.set_desaturation_params()
-        ranges = self.bins.find_ranges(self.threshold)
-        for reg in ranges:
-            # result = self.black_and_white[:, reg[0]:reg[1]]
-            # yield reg[0], reg[1], self.top, self.bottom
-            yield reg
+        area = self.bins.find_areas(self.img.coord, self.threshold)
+        for area in area:
+            yield area
 
-    def debug(self, window_title):
+    def debug(self, window_title="Digits Area Finder"):
         print '\n=== DigitsAreaFinder'
         print 'custom shape', self.img.get_custom_shape()
         print 'numpy shape', self.img.get_original_shape()
@@ -81,7 +75,7 @@ class RowAreasFinder:
     def extract(self):
         self.bins = self.img.get_color_bins_object(20, ColorBins.ORIENTATION_VERTICAL)
         self.bins.set_desaturation_params()
-        ranges = self.bins.find_ranges(self.threshold)
+        ranges = self.bins.find_areas(self.threshold)
         for r in ranges:
             # todo crop
             f = DigitsAreaFinder(self)
