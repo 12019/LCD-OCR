@@ -5,7 +5,7 @@ python:
 install: "pip install numpy matplotlib"
 # command to run tests
 
-script: doctests
+script: nosetests --with-doctest
 
 env:
   global:
