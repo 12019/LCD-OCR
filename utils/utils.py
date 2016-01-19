@@ -11,22 +11,24 @@ class Utils:
         assert False, "This class is for static methods only"
 
     @staticmethod
-    def show_image(image, image_map=None):
+    def show_image(image, window_title, image_map=None):
         plot = plt.imshow(image, image_map)
+        plt.title(window_title)
         plot.axes.get_xaxis().set_visible(False)
         plot.axes.get_yaxis().set_visible(False)
         plt.show()
 
     @staticmethod
-    def show_images(images, labels):
-        # """
-        # >>> arr = cv2.imread("./img/tests/one_line_lcd.jpg")
-        # >>> Utils.show_images([arr, arr])
-        # """
+    def show_images(images, labels, window_title):
+        """
+        >>> arr = cv2.imread("./img/tests/one_line_lcd.jpg", 0)
+        >>> Utils.show_images([arr, arr], ['t', 't'], "general title")
+        """
         fig = plt.figure()
+        fig.canvas.set_window_title(window_title)
         for i, image in enumerate(images):
             label = labels[i]
-            a = fig.add_subplot(len(images), 1, i)
+            a = fig.add_subplot(len(images), 1, i+1)
             a.set_title(label)
             plt.imshow(image)
         plt.show()
@@ -36,7 +38,7 @@ class Utils:
         height, width = shape
         canvas = np.zeros((height, width, 3), np.uint8)
         cv2.drawContours(canvas, contours, contour_id, (0, 255, 0), 3)
-        Utils.show_image(canvas)
+        Utils.show_image(canvas, "Contours")
 
     @staticmethod
     def subimage_rotated(image, center, theta, width, height):

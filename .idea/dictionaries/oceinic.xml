@@ -2,13 +2,16 @@
   <dictionary name="oceinic">
     <words>
       <w>autofocus</w>
+      <w>desaturation</w>
       <w>dtype</w>
       <w>imread</w>
+      <w>linspace</w>
       <w>maxval</w>
       <w>ndarray</w>
       <w>rectangularity</w>
       <w>smartphone</w>
       <w>subimage</w>
+      <w>thresholding</w>
       <w>uint</w>
     </words>
   </dictionary>

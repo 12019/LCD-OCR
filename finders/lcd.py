@@ -2,10 +2,10 @@ import os.path
 
 import cv2
 
-from finders.areas import DigitsAreaFinder
-from utils.utils import Utils
-from quality_assurance import QualityAssurance
 from areas import RowAreasFinder
+from image.image import Image
+from quality_assurance import QualityAssurance
+from utils.utils import Utils
 
 
 class LCDFinder:
@@ -52,8 +52,8 @@ class LCDFinder:
         output = self.output_path % self.current
         # r = cv2.imwrite(output, subimage)
         # Utils.show_image(subimage)
-        # DigitsFinder(subimage)
-        f = RowAreasFinder(subimage, 0, 0)
+        i = Image(subimage)
+        f = RowAreasFinder(i)
         for left, right, top, bottom in f.extract():
             print left, right, top, bottom
             Utils.show_image(subimage[left:right, top:bottom])
