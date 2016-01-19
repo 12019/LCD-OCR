@@ -96,3 +96,5 @@ class Coordinates:
         self.right -= pixels
         self.top += pixels
         self.bottom -= pixels
+
+# todo Hough lines
