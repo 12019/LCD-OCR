@@ -23,8 +23,6 @@ class DigitsAreaFinder:
     >>> # r.debug()
     >>> o = Outline(img, e)
     >>> # o.show()
-    >>> 1 + 2
-    8
     """
     img = bins = None
     bins_count = 10
