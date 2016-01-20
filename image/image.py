@@ -53,7 +53,7 @@ class Image:
         return self.ndarray[self.coord.top:self.coord.bottom, self.coord.left:self.coord.right]
 
     def crop(self, coord):
-        """Virtual crop.
+        """Virtual crop
 
         :param coord - instance of Coordinates object
         """
