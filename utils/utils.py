@@ -12,7 +12,7 @@ class Utils:
 
     @staticmethod
     def show_image(image, window_title, image_map=None):
-        if not os.environ['DISPLAY']:
+        if 'DISPLAY' not in os.environ:
             return
         plot = plt.imshow(image, image_map)
         plt.title(window_title)
@@ -26,7 +26,7 @@ class Utils:
         >>> arr = cv2.imread("./img/tests/one_line_lcd.jpg", 0)
         >>> Utils.show_images([arr, arr], ['t', 't'], "general title")
         """
-        if not os.environ['DISPLAY']:
+        if 'DISPLAY' not in os.environ:
             return
         fig = plt.figure()
         fig.canvas.set_window_title(window_title)
