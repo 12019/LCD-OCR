@@ -1,7 +1,7 @@
 import math
 import numpy as np
 from matplotlib import pyplot as plt
-
+import os
 import cv2
 
 
@@ -12,6 +12,8 @@ class Utils:
 
     @staticmethod
     def show_image(image, window_title, image_map=None):
+        if not os.environ['DISPLAY']:
+            return
         plot = plt.imshow(image, image_map)
         plt.title(window_title)
         plot.axes.get_xaxis().set_visible(False)
@@ -24,6 +26,8 @@ class Utils:
         >>> arr = cv2.imread("./img/tests/one_line_lcd.jpg", 0)
         >>> Utils.show_images([arr, arr], ['t', 't'], "general title")
         """
+        if not os.environ['DISPLAY']:
+            return
         fig = plt.figure()
         fig.canvas.set_window_title(window_title)
         for i, image in enumerate(images):
