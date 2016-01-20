@@ -13,7 +13,7 @@ class ColorBins:
     >>> basis = Coordinates.from_ndarray(arr)
     >>> print list(bins.find_areas(basis, 127))
     [(0:572, 258:920)]
-    >>> bins.debug()
+    >>> # bins.debug()
     """
     image = None
     bins_count = -1

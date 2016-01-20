@@ -24,7 +24,7 @@ class Utils:
     def show_images(images, labels, window_title):
         """
         >>> arr = cv2.imread("./img/tests/one_line_lcd.jpg", 0)
-        >>> Utils.show_images([arr, arr], ['t', 't'], "general title")
+        >>> # Utils.show_images([arr, arr], ['t', 't'], "general title")
         """
         if 'DISPLAY' not in os.environ:
             return

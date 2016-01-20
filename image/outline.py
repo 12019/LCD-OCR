@@ -19,7 +19,7 @@ class Outline:
         >>> r2 = Coordinates(100, 400, 150, 300)
         >>> r3 = Coordinates(250, 200, 500, 100)
         >>> i = Outline(arr, [r1, r2, r3])
-        >>> i.show()
+        >>> # i.show()
         """
         self.ndarray = ndarray
         for coord in coord_list:

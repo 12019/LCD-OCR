@@ -22,7 +22,7 @@ class DigitsAreaFinder:
     [(0:495, 121:1009)]
     >>> # r.debug()
     >>> o = Outline(img, e)
-    >>> o.show()
+    >>> # o.show()
     """
     img = bins = None
     bins_count = 10
@@ -75,10 +75,11 @@ class RowAreasFinder:
     def extract(self):
         self.bins = self.img.get_color_bins_object(20, ColorBins.ORIENTATION_VERTICAL)
         self.bins.set_desaturation_params()
-        ranges = self.bins.find_areas(self.threshold)
+        ranges = self.bins.find_areas(self.img.coord, self.threshold)
         for r in ranges:
             # todo crop
-            f = DigitsAreaFinder(self)
+            print r
+            f = DigitsAreaFinder(self.img)
             for t in f.extract():
                 yield t
 
