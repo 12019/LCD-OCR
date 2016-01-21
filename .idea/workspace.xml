@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1d8a138-43f8-4415-849d-0bfd81b4b314" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/finders/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/finders/areas.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/finders/lcd.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/color_bins.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/image/outline.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/image/__init__.py" afterPath="$PROJECT_DIR$/qa/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/image/coordinates.py" afterPath="$PROJECT_DIR$/coordinates.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/image/image.py" afterPath="$PROJECT_DIR$/image.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/img/21.jpg" afterPath="$PROJECT_DIR$/img/tests/photo.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/quality_assurance.py" afterPath="$PROJECT_DIR$/qa/quality_assurance.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/finders/areas.py" afterPath="$PROJECT_DIR$/finders/areas.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/image/color_bins.py" afterPath="$PROJECT_DIR$/image/color_bins.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/image/image.py" afterPath="$PROJECT_DIR$/image/image.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/image/outline.py" afterPath="$PROJECT_DIR$/image/outline.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/__init__.py" afterPath="$PROJECT_DIR$/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/digits_sharpener.py" afterPath="$PROJECT_DIR$/digits_sharpener.py" />
     </list>
     <ignored path="opencv.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +37,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="coordinates.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/image/coordinates.py">
+        <entry file="file://$PROJECT_DIR$/coordinates.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
@@ -37,14 +46,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="color_bins.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/image/color_bins.py">
+      <file leaf-file-name="color_bins.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/parts/color_bins.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3444564">
-              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-              <folding>
-                <element signature="e#46#56#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -60,47 +67,49 @@
         </entry>
       </file>
       <file leaf-file-name="outline.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/image/outline.py">
+        <entry file="file://$PROJECT_DIR$/parts/outline.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="image.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/image/image.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/utils.py">
+        <entry file="file://$PROJECT_DIR$/image.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="areas.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/finders/areas.py">
+      <file leaf-file-name="parts.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/parts/parts.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
+              <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="photo.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/parts/photo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.15823466">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -130,7 +139,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/finders/lcd.py" />
         <option value="$PROJECT_DIR$/utils/color_bins.py" />
         <option value="$PROJECT_DIR$/utils/image.py" />
         <option value="$PROJECT_DIR$/image/Coordinates.py" />
@@ -140,8 +148,13 @@
         <option value="$PROJECT_DIR$/utils/utils.py" />
         <option value="$PROJECT_DIR$/image/outline.py" />
         <option value="$PROJECT_DIR$/image/image.py" />
-        <option value="$PROJECT_DIR$/finders/areas.py" />
         <option value="$PROJECT_DIR$/image/color_bins.py" />
+        <option value="$PROJECT_DIR$/finders/lcd.py" />
+        <option value="$PROJECT_DIR$/finders/photo.py" />
+        <option value="$PROJECT_DIR$/image/photo.py" />
+        <option value="$PROJECT_DIR$/parts/image.py" />
+        <option value="$PROJECT_DIR$/image.py" />
+        <option value="$PROJECT_DIR$/finders/areas.py" />
       </list>
     </option>
   </component>
@@ -234,7 +247,7 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="img">
+            <PATH_ELEMENT USER_OBJECT="qa">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -248,39 +261,7 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="img">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="tests">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="opencv">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="image">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="opencv">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="finders">
+            <PATH_ELEMENT USER_OBJECT="parts">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -347,14 +328,14 @@
       <recent name="$PROJECT_DIR$/img/tests" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/image" />
-      <recent name="$PROJECT_DIR$/utils" />
+      <recent name="$PROJECT_DIR$/qa" />
+      <recent name="$PROJECT_DIR$/parts" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/finders" />
-      <recent name="$PROJECT_DIR$/crop" />
+      <recent name="$PROJECT_DIR$/image" />
+      <recent name="$PROJECT_DIR$/img/tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Doctests in areas">
+  <component name="RunManager" selected="Python tests.Doctests in photo">
     <configuration default="false" name="Doctests in ColorBins" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -408,6 +389,25 @@
       <option name="METHOD_NAME" value="__init__" />
       <option name="FOLDER_NAME" value="$PROJECT_DIR$" />
       <option name="TEST_TYPE" value="TEST_FOLDER" />
+      <option name="PATTERN" value="*.py" />
+      <option name="USE_PATTERN" value="true" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Doctests in photo" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="opencv" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/image/photo.py" />
+      <option name="CLASS_NAME" value="Photo" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="$PROJECT_DIR$" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
       <option name="PATTERN" value="*.py" />
       <option name="USE_PATTERN" value="true" />
       <method />
@@ -573,7 +573,7 @@
       <option name="USE_PATTERN" value="true" />
       <method />
     </configuration>
-    <configuration default="false" name="Doctests in areas" type="tests" factoryName="Doctests" nameIsGenerated="true">
+    <configuration default="false" name="Doctests in parts" type="tests" factoryName="Doctests" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -583,7 +583,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="opencv" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/finders/areas.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/parts/parts.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -592,19 +592,21 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <list size="6">
+    <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Python.Travis CI: local" />
       <item index="1" class="java.lang.String" itemvalue="Python tests.Doctests in coordinates" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Doctests in areas" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Doctests in parts" />
       <item index="3" class="java.lang.String" itemvalue="Python tests.Doctests in ColorBins" />
       <item index="4" class="java.lang.String" itemvalue="Python tests.Doctests in image" />
       <item index="5" class="java.lang.String" itemvalue="Python tests.Doctests in opencv" />
+      <item index="6" class="java.lang.String" itemvalue="Python tests.Doctests in photo" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Doctests in ColorBins" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Doctests in opencv" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Doctests in image" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Doctests in photo" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Doctests in ColorBins" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Doctests in opencv" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Doctests in image" />
       </list>
     </recent_temporary>
   </component>
@@ -745,39 +747,45 @@
       <option name="project" value="LOCAL" />
       <updated>1453275524936</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="remaining tests wont matter after introducing Hough lines into the algorithm">
+      <created>1453360330111</created>
+      <option name="number" value="00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1453360330111</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Doctests_in_areas - 2016.01.20 at 15h 15m 56s.xml">
-      <configuration name="Doctests in areas" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Doctests_in_areas - 2016.01.20 at 15h 17m 32s.xml">
-      <configuration name="Doctests in areas" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Doctests_in_areas - 2016.01.20 at 15h 17m 48s.xml">
-      <configuration name="Doctests in areas" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Doctests_in_areas - 2016.01.20 at 15h 19m 35s.xml">
-      <configuration name="Doctests in areas" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Doctests_in_areas - 2016.01.20 at 15h 20m 06s.xml">
-      <configuration name="Doctests in areas" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Doctests_in_areas - 2016.01.20 at 15h 20m 34s.xml">
-      <configuration name="Doctests in areas" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Doctests_in_areas - 2016.01.20 at 15h 21m 17s.xml">
-      <configuration name="Doctests in areas" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Doctests_in_areas - 2016.01.21 at 09h 47m 09s.xml">
-      <configuration name="Doctests in areas" configurationId="tests" />
-    </history-entry>
     <history-entry file="Doctests_in_areas - 2016.01.21 at 09h 47m 20s.xml">
       <configuration name="Doctests in areas" configurationId="tests" />
     </history-entry>
     <history-entry file="Doctests_in_areas - 2016.01.21 at 10h 03m 23s.xml">
       <configuration name="Doctests in areas" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_lcd - 2016.01.21 at 11h 45m 46s.xml">
+      <configuration name="Doctests in lcd" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_lcd - 2016.01.21 at 11h 50m 22s.xml">
+      <configuration name="Doctests in lcd" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_lcd - 2016.01.21 at 17h 54m 22s.xml">
+      <configuration name="Doctests in lcd" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_photo - 2016.01.21 at 17h 57m 19s.xml">
+      <configuration name="Doctests in photo" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_photo - 2016.01.21 at 17h 58m 39s.xml">
+      <configuration name="Doctests in photo" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_photo - 2016.01.21 at 18h 04m 02s.xml">
+      <configuration name="Doctests in photo" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_photo - 2016.01.21 at 18h 11m 20s.xml">
+      <configuration name="Doctests in photo" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_photo_(1) - 2016.01.21 at 18h 13m 08s.xml">
+      <configuration name="Doctests in photo (1)" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView" selected-index="4">
@@ -794,9 +802,10 @@
     <editor active="false" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2139808" sideWeight="0.49358973" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21611527" sideWeight="0.49358973" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295099" sideWeight="0.4974227" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5025773" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3274244" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295099" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2940563" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -811,7 +820,6 @@
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="100" y="152" width="1710" height="856" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3274244" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -858,17 +866,11 @@
     <MESSAGE value="running without a display" />
     <MESSAGE value="before areas refactoring" />
     <MESSAGE value="git pre-hook testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="git pre-hook testing" />
+    <MESSAGE value="remaining tests wont matter after introducing Hough lines into the algorithm" />
+    <option name="LAST_COMMIT_MESSAGE" value="remaining tests wont matter after introducing Hough lines into the algorithm" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/image/color_bins.py</url>
-          <line>51</line>
-          <option name="timeStamp" value="58" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="59" />
     </breakpoint-manager>
     <watches-manager>
@@ -878,22 +880,17 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/finders/lcd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="37" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/finders/areas.py">
+    <entry file="file://$PROJECT_DIR$/parts/parts.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/finders/lcd.py">
+    <entry file="file://$PROJECT_DIR$/parts/photo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
@@ -907,31 +904,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/image/image.py">
+    <entry file="file://$PROJECT_DIR$/image.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="90" column="28" selection-start-line="90" selection-start-column="28" selection-end-line="90" selection-end-column="28" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/image/color_bins.py">
+    <entry file="file://$PROJECT_DIR$/parts/color_bins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-          <folding>
-            <element signature="e#46#56#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/finders/areas.py">
+    <entry file="file://$PROJECT_DIR$/parts/parts.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -952,7 +949,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/finders/lcd.py">
+    <entry file="file://$PROJECT_DIR$/parts/photo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
@@ -966,31 +963,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/image/image.py">
+    <entry file="file://$PROJECT_DIR$/image.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/image/color_bins.py">
+    <entry file="file://$PROJECT_DIR$/parts/color_bins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-          <folding>
-            <element signature="e#46#56#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/finders/areas.py">
+    <entry file="file://$PROJECT_DIR$/parts/parts.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1001,11 +998,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/finders/areas.py">
+    <entry file="file://$PROJECT_DIR$/parts/parts.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="71" column="32" selection-start-line="71" selection-start-column="32" selection-end-line="71" selection-end-column="32" />
-          <folding />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1014,18 +1013,20 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/finders/lcd.py">
+    <entry file="file://$PROJECT_DIR$/parts/photo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="56" column="41" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/finders/areas.py">
+    <entry file="file://$PROJECT_DIR$/parts/parts.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1036,11 +1037,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/finders/areas.py">
+    <entry file="file://$PROJECT_DIR$/parts/parts.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1051,11 +1054,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/finders/areas.py">
+    <entry file="file://$PROJECT_DIR$/parts/parts.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1080,18 +1085,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/img/39.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quality_assurance.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/21.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -1165,39 +1158,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33230293">
           <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/finders/lcd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image/__init__.py">
+    <entry file="file://$PROJECT_DIR$/parts/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image/outline.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image/coordinates.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1214,12 +1181,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/image/image.py">
+    <entry file="file://$PROJECT_DIR$/img/tests/photo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coordinates.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+          <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parts/parts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1234,20 +1214,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/finders/areas.py">
+    <entry file="file://$PROJECT_DIR$/image.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parts/color_bins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/image/color_bins.py">
+    <entry file="file://$PROJECT_DIR$/qa/quality_assurance.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3444564">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parts/outline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#46#56#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parts/photo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15823466">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>

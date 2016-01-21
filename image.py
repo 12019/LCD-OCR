@@ -1,9 +1,10 @@
+import numpy as np
+
 import cv2
 
-from color_bins import ColorBins
-from utils.utils import Utils
+from parts.color_bins import ColorBins
 from coordinates import Coordinates
-import numpy as np
+from utils.utils import Utils
 
 
 class Image:
@@ -12,7 +13,7 @@ class Image:
 
     def __init__(self, ndarray, basis=None):
         assert isinstance(ndarray, np.ndarray)
-        assert len(ndarray.shape) is 2, "Not a valid image"
+        assert len(ndarray.shape) is 2, "Not a valid parts"
         self.ndarray = ndarray
         if basis:
             self.coord = basis
