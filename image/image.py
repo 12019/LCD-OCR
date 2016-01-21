@@ -3,16 +3,21 @@ import cv2
 from color_bins import ColorBins
 from utils.utils import Utils
 from coordinates import Coordinates
+import numpy as np
 
 
 class Image:
     ndarray = None
     coord = None
 
-    def __init__(self, ndarray):
+    def __init__(self, ndarray, basis=None):
+        assert isinstance(ndarray, np.ndarray)
         assert len(ndarray.shape) is 2, "Not a valid image"
         self.ndarray = ndarray
-        self.coord = Coordinates.from_ndarray(self.ndarray)
+        if basis:
+            self.coord = basis
+        else:
+            self.coord = Coordinates.from_ndarray(self.ndarray)
 
     def __str__(self):
         return str(self.coord)
@@ -75,10 +80,11 @@ class Image:
         self.coord.crop_borders(vertical_percent)
 
     def debug(self, window_title="Image"):
-        modified = self.coord.left is not 0 or self.coord.right is not 0 or self.coord.top is not 0 or self.coord.bottom is not 0
-        suffix = "(*)" if modified else ""
+        modified = self.coord.left is not 0 or self.coord.top is not 0
+        if not modified:
+            return
 
-        label_partial = "Partial: %s %s" % (self, suffix)
+        label_partial = "Partial: %s" % self
         label_full = "Full: %sx%s" % self.ndarray.shape
 
         Utils.show_images([self.get_ndarray(), self.ndarray],
@@ -87,5 +93,3 @@ class Image:
 
     def get_color_bins_object(self, count, orientation, interpolation_type=cv2.INTER_AREA):
         return ColorBins(self.get_ndarray(), count, orientation, interpolation_type)
-
-# todo travis

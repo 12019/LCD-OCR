@@ -1,6 +1,7 @@
 import cv2
 from utils.utils import Utils
 from image import Coordinates
+import numpy as np
 
 
 class Outline:
@@ -21,6 +22,7 @@ class Outline:
         >>> i = Outline(arr, [r1, r2, r3])
         >>> # i.show()
         """
+        assert isinstance(ndarray, np.ndarray)
         self.ndarray = ndarray
         for coord in coord_list:
             self.draw_outline(coord)
