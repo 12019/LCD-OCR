@@ -31,5 +31,5 @@ class DigitsSharpener:
         upper = int(min(255, (1.0 + sigma) * v))
         edged = cv2.Canny(image, lower, upper)
 
-        # return the edged parts
+        # return the edged visible
         return edged

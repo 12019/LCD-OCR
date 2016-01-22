@@ -57,3 +57,16 @@ class Utils:
 
         return cv2.warpAffine(image, mapping, (width, height), flags=cv2.WARP_INVERSE_MAP,
                               borderMode=cv2.BORDER_REPLICATE)
+
+    @staticmethod
+    def angles_to_points(lines):
+        for rho, theta in lines:
+            a = np.cos(theta)
+            b = np.sin(theta)
+            x0 = a*rho
+            y0 = b*rho
+            x1 = int(x0 + 100*(-b))
+            y1 = int(y0 + 100*(a))
+            x2 = int(x0 - 100*(-b))
+            y2 = int(y0 - 100*(a))
+            yield (x1, y1), (x2, y2)

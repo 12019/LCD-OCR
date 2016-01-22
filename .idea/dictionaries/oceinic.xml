@@ -4,10 +4,12 @@
       <w>autofocus</w>
       <w>desaturation</w>
       <w>dtype</w>
+      <w>hough</w>
       <w>imread</w>
       <w>linspace</w>
       <w>maxval</w>
       <w>ndarray</w>
+      <w>otsu</w>
       <w>rectangularity</w>
       <w>smartphone</w>
       <w>subimage</w>
