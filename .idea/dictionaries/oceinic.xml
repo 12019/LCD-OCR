@@ -2,6 +2,8 @@
   <dictionary name="oceinic">
     <words>
       <w>autofocus</w>
+      <w>coords</w>
+      <w>croppable</w>
       <w>desaturation</w>
       <w>dtype</w>
       <w>hough</w>
@@ -13,6 +15,7 @@
       <w>rectangularity</w>
       <w>smartphone</w>
       <w>subimage</w>
+      <w>subimages</w>
       <w>thresholding</w>
       <w>uint</w>
     </words>

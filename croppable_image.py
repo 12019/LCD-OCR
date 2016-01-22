@@ -7,7 +7,7 @@ from coordinates import Coordinates
 from utils.utils import Utils
 
 
-class Image:
+class CroppableImage:
     ndarray = None
     coord = None
 
@@ -39,7 +39,7 @@ class Image:
         >>> arr = cv2.imread("./img/tests/one_line_lcd.jpg", 0)
         >>> arr is None
         False
-        >>> i = Image(arr)
+        >>> i = CroppableImage(arr)
         >>> i.get_original_shape()
         (572, 1310)
         >>> i.get_custom_shape()
@@ -71,7 +71,7 @@ class Image:
         :return: void
 
         >>> arr = cv2.imread("./img/tests/one_line_lcd.jpg", 0)
-        >>> i = Image(arr)
+        >>> i = CroppableImage(arr)
         >>> i.get_custom_shape()
         (572, 1310)
         >>> i.crop_borders(0.1)
