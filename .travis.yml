@@ -2,7 +2,7 @@ language: python
 python:
   - "2.7"
 # command to install dependencies
-install: "pip install numpy matplotlib pytesseract"
+install: "pip install numpy matplotlib pytesseract pillow"
 # command to run tests
 
 script:
