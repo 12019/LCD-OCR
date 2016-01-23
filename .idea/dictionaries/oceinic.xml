@@ -4,20 +4,32 @@
       <w>autofocus</w>
       <w>coords</w>
       <w>croppable</w>
+      <w>cuda</w>
+      <w>dbuild</w>
+      <w>denable</w>
+      <w>deps</w>
       <w>desaturation</w>
       <w>dtype</w>
+      <w>dwith</w>
       <w>hough</w>
       <w>imread</w>
       <w>linspace</w>
       <w>matplotlib</w>
       <w>maxval</w>
+      <w>mkdir</w>
       <w>ndarray</w>
+      <w>nosetests</w>
+      <w>opencl</w>
+      <w>opengl</w>
       <w>otsu</w>
       <w>pytesseract</w>
+      <w>pythonpath</w>
+      <w>readlink</w>
       <w>rectangularity</w>
       <w>smartphone</w>
       <w>subimage</w>
       <w>subimages</w>
+      <w>sudo</w>
       <w>thresholding</w>
       <w>uint</w>
     </words>

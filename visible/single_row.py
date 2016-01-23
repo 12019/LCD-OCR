@@ -1,6 +1,6 @@
 import numpy as np
 
-from color_bins import ColorBins
+from projection import Projection
 from coordinates import Coordinates
 from croppable_image import CroppableImage
 import cv2
@@ -35,8 +35,8 @@ class SingleRow:
         self.img = CroppableImage(ndarray, basis)
 
     def extract_digits_areas(self):
-        self.bins = self.img.get_color_bins_object(self.bins_count, ColorBins.ORIENTATION_HORIZONTAL)
-        self.bins.threshold(self.threshold)
+        self.bins = self.img.get_color_bins_object(self.bins_count, Projection.PROJECTION_HORIZONTAL)
+        self.bins.make_binary_projection(self.threshold)
         self.areas = self.bins.find_areas(self.img.coord)
         return self.areas
 

@@ -2,7 +2,7 @@ import numpy as np
 
 import cv2
 
-from visible.color_bins import ColorBins
+from visible.projection import Projection
 from coordinates import Coordinates
 from utils.utils import Utils
 
@@ -93,4 +93,4 @@ class CroppableImage:
                           window_title)
 
     def get_color_bins_object(self, count, orientation, interpolation_type=cv2.INTER_AREA):
-        return ColorBins(self.get_ndarray(), count, orientation, interpolation_type)
+        return Projection(self.get_ndarray(), count, orientation, interpolation_type)

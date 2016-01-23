@@ -2,7 +2,7 @@ import numpy as np
 
 from coordinates import Coordinates
 from croppable_image import CroppableImage
-from visible.color_bins import ColorBins
+from visible.projection import Projection
 from visible.single_row import SingleRow
 import cv2
 
@@ -34,8 +34,8 @@ class LCD:
         # self.img.crop_borders(0.1)
 
     def extract_digits_area(self):
-        self.bins = self.img.get_color_bins_object(self.bins_count, ColorBins.ORIENTATION_VERTICAL)
-        self.bins.threshold(self.threshold)
+        self.bins = self.img.get_color_bins_object(self.bins_count, Projection.PROJECTION_VERTICAL)
+        self.bins.make_binary_projection(self.threshold)
         areas = self.bins.find_areas(self.img.coord)
         # self.debug()
         for r in areas:
