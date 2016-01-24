@@ -23,19 +23,13 @@ class FontNormalizer:
         self.img = img
 
     def calculate_weights(self):
-        for i in np.arange(-30., 30., 2.):
+        for i in np.arange(-30., 30., 5.):
             obj = ShearTool(self.img)
             corrected = obj.shear(i)
-            projection = Projection(corrected, self.img.shape[1], Projection.PROJECTION_HORIZONTAL)
-            projection.make_color_projection()
-            # projection.make_binary_projection(200)
-            # message = "%s %s" % (i, np.sum(projection.binary_projection))
-            # projection.debug(message)
-            # np.set_printoptions(threshold=np.nan)
-            # print projection.binary_projection.squeeze()
-            # print np.sum(projection.binary_projection)
-            # print np.sum(projection.color_projection)
-            yield i, np.sum(projection.color_projection)
+            projection = Projection(corrected, self.img.shape[1], Projection.TYPE_HORIZONTAL)
+            projection.make_colorful_projection(cv2.INTER_AREA)
+            # Utils.plot_projection(projection.colorful_projection, projection.image)
+            yield i, np.sum(projection.colorful_projection)
 
     def find_inclination(self):
         weights = self.calculate_weights()

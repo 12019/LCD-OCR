@@ -13,8 +13,8 @@ class Photo:
     """
     >>> p = Photo("img/tests/photo.jpg", 99)
     >>> list(p.extract_areas_with_digits(True, True))
-    [(30:589, 426:1153)]
-    >>> p.debug()
+    [(62:558, 320:1247)]
+    >>> # p.debug()
     """
     current = 11
     img = subimage = None

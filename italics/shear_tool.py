@@ -30,4 +30,3 @@ class ShearTool:
                            [self.height + value + half, self.width]])
         m = cv2.getPerspectiveTransform(pts1, pts2)
         return cv2.warpPerspective(self.img, m, (self.width, self.height), borderMode=cv2.BORDER_REPLICATE)
-

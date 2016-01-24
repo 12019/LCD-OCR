@@ -38,6 +38,24 @@ class Utils:
         plt.show()
 
     @staticmethod
+    def plot_projection(arr, image):
+        arr = np.array(arr).squeeze()
+        # plt.plot(arr)
+        # plt.show()
+
+        fig = plt.figure()
+
+        a = fig.add_subplot(211)
+        a.set_title("Projection")
+        plt.plot(arr)
+
+        a = fig.add_subplot(212)
+        a.set_title("Image")
+        plt.imshow(image)
+
+        plt.show()
+
+    @staticmethod
     def show_contour(shape, contours, contour_id=-1):
         height, width = shape
         canvas = np.zeros((height, width, 3), np.uint8)

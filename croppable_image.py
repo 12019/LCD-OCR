@@ -92,5 +92,5 @@ class CroppableImage:
                           [label_partial, label_full],
                           window_title)
 
-    def get_color_bins_object(self, count, orientation, interpolation_type=cv2.INTER_AREA):
+    def get_projections_object(self, count, orientation, interpolation_type=cv2.INTER_AREA):
         return Projection(self.get_ndarray(), count, orientation, interpolation_type)

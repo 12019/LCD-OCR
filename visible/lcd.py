@@ -4,6 +4,7 @@ from coordinates import Coordinates
 from croppable_image import CroppableImage
 from visible.projection import Projection
 from visible.single_row import SingleRow
+from visible.outline import Outline
 import cv2
 
 
@@ -19,24 +20,25 @@ class LCD:
     >>> r = LCD(img)
     >>> areas = list(r.extract_digits_area())
     >>> areas
-    [(27:515, 258:920)]
-    >>> # o = Outline(img, areas)
+    [(57:514, 173:1016)]
+    >>> o = Outline(img, areas)
     >>> # o.show()
     """
-    img = bins = None
+    img = projection = None
     bins_count = 20
     threshold = 200
 
     def __init__(self, ndarray, basis=None):
         assert isinstance(ndarray, np.ndarray)
         assert (basis is None) or isinstance(basis, Coordinates)
+        ndarray = cv2.equalizeHist(ndarray)
         self.img = CroppableImage(ndarray, basis)
-        # self.img.crop_borders(0.1)
+        self.img.crop_borders(0.1)
 
     def extract_digits_area(self):
-        self.bins = self.img.get_color_bins_object(self.bins_count, Projection.PROJECTION_VERTICAL)
-        self.bins.make_binary_projection(self.threshold)
-        areas = self.bins.find_areas(self.img.coord)
+        self.projection = self.img.get_projections_object(self.bins_count, Projection.TYPE_VERTICAL)
+        self.projection.make_binary_projection(self.threshold, cv2.THRESH_BINARY)
+        areas = self.projection.find_areas(self.img.coord)
         # self.debug()
         for r in areas:
             f = SingleRow(self.img.ndarray, r)
@@ -44,13 +46,13 @@ class LCD:
                 yield t
 
     def debug(self, window_title="Find rows"):
-        print '\n=== RowAreasFinder'
+        print '\n=== LCD class'
         print 'custom shape', self.img.get_custom_shape()
         print 'numpy shape', self.img.get_original_shape()
         print 'internals', self.img
-        print 'color bins', self.bins.color_bins
-        print 'binary bins', self.bins.binary_bins
+        print 'color bins', self.projection.colorful_projection
+        print 'binary bins', self.projection.binary_projection
         self.img.debug(window_title)
-        self.bins.debug(window_title)
+        self.projection.debug(window_title)
 
 

@@ -22,6 +22,7 @@
       <w>opencl</w>
       <w>opengl</w>
       <w>otsu</w>
+      <w>printoptions</w>
       <w>pytesseract</w>
       <w>pythonpath</w>
       <w>readlink</w>
