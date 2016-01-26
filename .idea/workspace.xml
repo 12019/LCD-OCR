@@ -1,58 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1d8a138-43f8-4415-849d-0bfd81b4b314" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/lcd/22.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/lcd/38.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/22.jpg" afterPath="$PROJECT_DIR$/assets/img/22.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/23.jpg" afterPath="$PROJECT_DIR$/assets/img/23.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/31.jpg" afterPath="$PROJECT_DIR$/assets/img/31.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/310.jpg" afterPath="$PROJECT_DIR$/assets/img/310.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/32.jpg" afterPath="$PROJECT_DIR$/assets/img/32.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/33.jpg" afterPath="$PROJECT_DIR$/assets/img/33.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/36.jpg" afterPath="$PROJECT_DIR$/assets/img/36.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/37.jpg" afterPath="$PROJECT_DIR$/assets/img/37.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/38.jpg" afterPath="$PROJECT_DIR$/assets/img/38.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/39.jpg" afterPath="$PROJECT_DIR$/assets/img/39.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/41.jpg" afterPath="$PROJECT_DIR$/assets/img/41.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/42.jpg" afterPath="$PROJECT_DIR$/assets/img/42.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/digits/22-1.jpg" afterPath="$PROJECT_DIR$/assets/img/digits/22-1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/digits/23-1.jpg" afterPath="$PROJECT_DIR$/assets/img/digits/23-1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/digits/32-1.jpg" afterPath="$PROJECT_DIR$/assets/img/digits/32-1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/digits/32-2.jpg" afterPath="$PROJECT_DIR$/assets/img/digits/32-2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/digits/33-1.jpg" afterPath="$PROJECT_DIR$/assets/img/digits/33-1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/digits/36-1.jpg" afterPath="$PROJECT_DIR$/assets/img/digits/36-1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/digits/37-1.jpg" afterPath="$PROJECT_DIR$/assets/img/digits/37-1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/digits/38-1.jpg" afterPath="$PROJECT_DIR$/assets/img/digits/38-1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/digits/38-2.jpg" afterPath="$PROJECT_DIR$/assets/img/digits/38-2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/digits/38-3.jpg" afterPath="$PROJECT_DIR$/assets/img/digits/38-3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/digits/38-4.jpg" afterPath="$PROJECT_DIR$/assets/img/digits/38-4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/digits/99-1.jpg" afterPath="$PROJECT_DIR$/assets/img/digits/99-1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/lcd/101.jpg" afterPath="$PROJECT_DIR$/assets/img/lcd/101.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/lcd/102.jpg" afterPath="$PROJECT_DIR$/assets/img/lcd/102.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/lcd/22.jpg" afterPath="$PROJECT_DIR$/assets/img/doctests/single_line_lcd.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/lcd/23.jpg" afterPath="$PROJECT_DIR$/assets/img/lcd/23.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/lcd/32.jpg" afterPath="$PROJECT_DIR$/assets/img/lcd/32.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/lcd/33.jpg" afterPath="$PROJECT_DIR$/assets/img/lcd/33.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/lcd/36.jpg" afterPath="$PROJECT_DIR$/assets/img/lcd/36.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/lcd/37.jpg" afterPath="$PROJECT_DIR$/assets/img/lcd/37.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/lcd/38.jpg" afterPath="$PROJECT_DIR$/assets/img/doctests/multi_line_lcd.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/lcd/99.jpg" afterPath="$PROJECT_DIR$/assets/img/lcd/99.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/tests/one_line_lcd.jpg" afterPath="$PROJECT_DIR$/assets/img/doctests/digits.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/tests/photo.jpg" afterPath="$PROJECT_DIR$/assets/img/doctests/photo.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/tests/row.jpg" afterPath="$PROJECT_DIR$/assets/img/doctests/row.jpg" />
+    <list default="true" id="b1d8a138-43f8-4415-849d-0bfd81b4b314" name="Default" comment="video stub">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/visible/video.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/coordinates.py" afterPath="$PROJECT_DIR$/coordinates.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/croppable_image.py" afterPath="$PROJECT_DIR$/croppable_image.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/italics/font_normalizer.py" afterPath="$PROJECT_DIR$/italics/font_normalizer.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/italics/shear_tool.py" afterPath="$PROJECT_DIR$/italics/shear_tool.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ocr.py" afterPath="$PROJECT_DIR$/ocr.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/utils.py" afterPath="$PROJECT_DIR$/utils/utils.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/visible/lcd.py" afterPath="$PROJECT_DIR$/visible/lcd.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/visible/outline.py" afterPath="$PROJECT_DIR$/visible/outline.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/visible/photo.py" afterPath="$PROJECT_DIR$/visible/photo.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/visible/projection.py" afterPath="$PROJECT_DIR$/visible/projection.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/visible/single_row.py" afterPath="$PROJECT_DIR$/visible/single_row.py" />
     </list>
     <ignored path="opencv.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -100,8 +51,8 @@
       <file leaf-file-name="projection.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/visible/projection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.19808307">
-              <caret line="13" column="52" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.7007535">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="e#46#64#0" expanded="true" />
               </folding>
@@ -220,6 +171,7 @@
         <option value="$PROJECT_DIR$/visible/single_row.py" />
         <option value="$PROJECT_DIR$/visible/lcd.py" />
         <option value="$PROJECT_DIR$/visible/projection.py" />
+        <option value="$PROJECT_DIR$/visible/video.py" />
       </list>
     </option>
   </component>
@@ -379,46 +331,6 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="LCD-OCR">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="assets">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="img">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="LCD-OCR">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="assets">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="img">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="doctests">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -434,14 +346,14 @@
       <recent name="$PROJECT_DIR$/img/tests" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/visible" />
       <recent name="$PROJECT_DIR$/tests" />
       <recent name="$PROJECT_DIR$/qa" />
       <recent name="$PROJECT_DIR$/parts" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/image" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Travis CI: local">
+  <component name="RunManager" selected="Python.video">
     <configuration default="false" name="Doctests in font_normalizer" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -457,25 +369,6 @@
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="$PROJECT_DIR$" />
       <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="*.py" />
-      <option name="USE_PATTERN" value="true" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Doctest Utils.plot_projection" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="/usr/bin/python2.7" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="opencv" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/utils.py" />
-      <option name="CLASS_NAME" value="Utils" />
-      <option name="METHOD_NAME" value="plot_projection" />
-      <option name="FOLDER_NAME" value="$PROJECT_DIR$" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="*.py" />
       <option name="USE_PATTERN" value="true" />
       <method />
@@ -535,6 +428,23 @@
       <option name="TEST_TYPE" value="TEST_SCRIPT" />
       <option name="PATTERN" value="*.py" />
       <option name="USE_PATTERN" value="true" />
+      <method />
+    </configuration>
+    <configuration default="false" name="video" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/visible" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="opencv" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/visible/video.py" />
+      <option name="PARAMETERS" value="--with-doctest" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
@@ -682,18 +592,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.Travis CI: local" />
       <item index="1" class="java.lang.String" itemvalue="Python tests.Doctests in font_normalizer" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Doctest Utils.plot_projection" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Doctest Outline.__init__" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Doctests in LCD" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Doctests in coordinates" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Doctest Outline.__init__" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Doctests in LCD" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Doctests in coordinates" />
+      <item index="5" class="java.lang.String" itemvalue="Python.video" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Doctests in LCD" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Doctests in coordinates" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Doctest Outline.__init__" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Doctests in font_normalizer" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Doctest Utils.plot_projection" />
+        <item index="0" class="java.lang.String" itemvalue="Python.video" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Doctests in LCD" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Doctests in coordinates" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Doctest Outline.__init__" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Doctests in font_normalizer" />
       </list>
     </recent_temporary>
   </component>
@@ -894,7 +804,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453581384397</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="images moved one level deeper. lost some local files">
+      <created>1453785407378</created>
+      <option name="number" value="00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1453785407378</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -943,19 +859,19 @@
     <editor active="false" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24226254" sideWeight="0.49358973" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295099" sideWeight="0.4974227" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5025773" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3274244" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.50213444" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.49786553" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295099" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31595412" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24919957" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31595412" sideWeight="0.4967983" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66944736" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24226254" sideWeight="0.49358973" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3274244" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24919957" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24935567" sideWeight="0.50641024" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4337852" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="100" y="152" width="1710" height="856" />
@@ -993,7 +909,9 @@
     <MESSAGE value="Add files needed to pass in Travis CI" />
     <MESSAGE value="Update Travis dependencies list" />
     <MESSAGE value="Added a few hand-written test images. Started work on italics package" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a few hand-written test images. Started work on italics package" />
+    <MESSAGE value="images moved one level deeper. lost some local files" />
+    <MESSAGE value="video stub" />
+    <option name="LAST_COMMIT_MESSAGE" value="video stub" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1018,13 +936,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/visible/single_row.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/visible/single_row.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1356,10 +1267,18 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/visible/video.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50319487">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/visible/projection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19808307">
-          <caret line="13" column="52" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.7007535">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="e#46#64#0" expanded="true" />
           </folding>
