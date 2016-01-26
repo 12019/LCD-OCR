@@ -11,7 +11,7 @@ from croppable_image import CroppableImage
 
 class Photo:
     """
-    >>> p = Photo("img/tests/photo.jpg", 99)
+    >>> p = Photo("assets/img/doctests/photo.jpg", 99)
     >>> list(p.extract_areas_with_digits(True, True))
     [(62:558, 320:1247)]
     >>> # p.debug()

@@ -11,7 +11,7 @@ import cv2
 class LCD:
     """
     >>> import os
-    >>> path = "./img/tests/one_line_lcd.jpg"
+    >>> path = "assets/img/doctests/single_line_lcd.jpg"
     >>> os.path.isfile(path)
     True
     >>> img = cv2.imread(path, 0)

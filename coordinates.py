@@ -30,7 +30,7 @@ class Coordinates:
         :param coord - instance of Coordinates object
 
         >>> import cv2
-        >>> arr = cv2.imread("./img/tests/one_line_lcd.jpg", 0)
+        >>> arr = cv2.imread("assets/img/doctests/single_line_lcd.jpg", 0)
         >>> c = Coordinates.from_ndarray(arr)
         >>> arr.shape
         (572, 1310)

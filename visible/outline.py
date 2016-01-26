@@ -17,7 +17,7 @@ class Outline:
         :param coord_list: list of Coordinate objects
         :return:
 
-        >>> arr = cv2.imread("./img/tests/one_line_lcd.jpg", 0)
+        >>> arr = cv2.imread('assets/img/doctests/photo.jpg', 0)
         >>> r1 = Coordinates(400, 500, 1200, 300)
         >>> r2 = Coordinates(100, 400, 150, 300)
         >>> r3 = Coordinates(250, 200, 500, 100)

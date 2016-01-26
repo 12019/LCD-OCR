@@ -34,9 +34,9 @@ class CroppableImage:
         Format: (vertical, horizontal)
 
         >>> import os
-        >>> os.path.exists("./img/tests/one_line_lcd.jpg")
+        >>> os.path.exists('assets/img/doctests/single_line_lcd.jpg')
         True
-        >>> arr = cv2.imread("./img/tests/one_line_lcd.jpg", 0)
+        >>> arr = cv2.imread('assets/img/doctests/single_line_lcd.jpg', 0)
         >>> arr is None
         False
         >>> i = CroppableImage(arr)
@@ -70,7 +70,7 @@ class CroppableImage:
         :param vertical_percent: border width in range from 0 to 1
         :return: void
 
-        >>> arr = cv2.imread("./img/tests/one_line_lcd.jpg", 0)
+        >>> arr = cv2.imread("assets/img/doctests/single_line_lcd.jpg", 0)
         >>> i = CroppableImage(arr)
         >>> i.get_custom_shape()
         (572, 1310)

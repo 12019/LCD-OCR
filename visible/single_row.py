@@ -10,7 +10,7 @@ from visible.outline import Outline
 class SingleRow:
     """
     >>> import os
-    >>> row_path = './img/tests/row.jpg'
+    >>> row_path = 'assets/img/doctests/row.jpg'
     >>> os.path.isfile(row_path)
     True
     >>> img = cv2.imread(row_path, 0)

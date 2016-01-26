@@ -11,7 +11,7 @@ from utils.utils import Utils
 
 class Projection:
     """
-    >>> arr = cv2.imread("./img/tests/one_line_lcd.jpg", 0)
+    >>> arr = cv2.imread('assets/img/doctests/digits.jpg', 0)
     >>> bins = Projection(arr, 10, Projection.TYPE_HORIZONTAL)
     >>> bins.make_binary_projection()
     >>> basis = Coordinates.from_ndarray(arr)

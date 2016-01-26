@@ -7,7 +7,7 @@ from utils.utils import Utils
 
 class FontNormalizer:
     """
-    >>> before = cv2.imread('img/tests/one_line_lcd.jpg', 0)
+    >>> before = cv2.imread('assets/img/doctests/digits.jpg', 0)
     >>> obj = FontNormalizer(before)
     >>> obj.find_inclination()
     8.0

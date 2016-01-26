@@ -7,7 +7,7 @@ from croppable_image import CroppableImage
 
 class ShearTool:
     """
-    >>> st = ShearTool(cv2.imread('./img/tests/one_line_lcd.jpg', 0))
+    >>> st = ShearTool(cv2.imread('assets/img/doctests/digits.jpg', 0))
     >>> # Utils.show_image(st.shear(30), "shear")
     """
     img = None
