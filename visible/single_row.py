@@ -36,7 +36,7 @@ class SingleRow:
 
     def extract_digits_areas(self):
         self.bins = self.img.get_projections_object(self.bins_count, Projection.TYPE_HORIZONTAL)
-        self.bins.make_binary_projection(self.threshold)
+        self.bins.make_binary_projection(cv2.INTER_CUBIC, self.threshold)
         self.areas = self.bins.find_areas(self.img.coord)
         return self.areas
 

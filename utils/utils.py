@@ -38,8 +38,8 @@ class Utils:
         plt.show()
 
     @staticmethod
-    def plot_projection(arr, image):
-        arr = np.array(arr).squeeze()
+    def plot_projection(projection, image):
+        projection = np.array(projection).squeeze()
         # plt.plot(arr)
         # plt.show()
 
@@ -47,7 +47,10 @@ class Utils:
 
         a = fig.add_subplot(211)
         a.set_title("Projection")
-        plt.plot(arr)
+        # plt.plot(projection)
+        # plt.plot(np.gradient(projection))
+        plt.plot(np.gradient(projection) / projection)
+        # plt.plot(np.cumsum(np.gradient(projection) / projection))
 
         a = fig.add_subplot(212)
         a.set_title("Image")

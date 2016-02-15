@@ -2,6 +2,7 @@
   <dictionary name="oceinic">
     <words>
       <w>autofocus</w>
+      <w>binarize</w>
       <w>coords</w>
       <w>croppable</w>
       <w>cuda</w>
@@ -22,6 +23,7 @@
       <w>opencl</w>
       <w>opengl</w>
       <w>otsu</w>
+      <w>preprocess</w>
       <w>printoptions</w>
       <w>pytesseract</w>
       <w>pythonpath</w>

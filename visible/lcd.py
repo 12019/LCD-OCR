@@ -1,11 +1,12 @@
 import numpy as np
 
+import cv2
+
 from coordinates import Coordinates
 from croppable_image import CroppableImage
+from visible.outline import Outline
 from visible.projection import Projection
 from visible.single_row import SingleRow
-from visible.outline import Outline
-import cv2
 
 
 class LCD:
@@ -37,7 +38,7 @@ class LCD:
 
     def extract_digits_area(self):
         self.projection = self.img.get_projections_object(self.bins_count, Projection.TYPE_VERTICAL)
-        self.projection.make_binary_projection(self.threshold, cv2.THRESH_BINARY)
+        self.projection.make_binary_projection(cv2.INTER_CUBIC, cv2.THRESH_BINARY, self.threshold)
         areas = self.projection.find_areas(self.img.coord)
         # self.debug()
         for r in areas:
