@@ -5,7 +5,7 @@ import cv2
 from visible.outline import Outline
 from visible.lcd import LCD
 from qa.quality_assurance import QualityAssurance
-from utils.utils import Utils
+from utilities.utils import Utils
 from croppable_image import CroppableImage
 
 
@@ -47,7 +47,7 @@ class Photo:
         if write_lcd:
             self.write_lcd(self.subimage)
         f = LCD(self.subimage)
-        self.coords_list = f.extract_digits_area()
+        self.coords_list = f.extract_rows()
         if write_digits:
             self.coords_list = list(self.coords_list)
             self.write_digits(self.subimage, self.coords_list)

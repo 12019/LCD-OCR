@@ -38,21 +38,24 @@ class Utils:
         plt.show()
 
     @staticmethod
-    def plot_projection(projection, image):
+    def plot_projection(projection, image, window_title="Projection"):
         projection = np.array(projection).squeeze()
-        # plt.plot(arr)
-        # plt.show()
 
         fig = plt.figure()
+        plt.gcf().canvas.set_window_title(window_title)
 
-        a = fig.add_subplot(211)
+        a = fig.add_subplot(311)
+        a.set_title("Derivative")
+        derivative = np.gradient(projection) / projection
+        plt.plot(derivative)
+        plt.plot([2.5 * np.std(derivative)] * len(derivative))
+        plt.plot([-2.5 * np.std(derivative)] * len(derivative))
+
+        a = fig.add_subplot(312)
         a.set_title("Projection")
-        # plt.plot(projection)
-        # plt.plot(np.gradient(projection))
-        plt.plot(np.gradient(projection) / projection)
-        # plt.plot(np.cumsum(np.gradient(projection) / projection))
+        plt.plot(projection)
 
-        a = fig.add_subplot(212)
+        a = fig.add_subplot(313)
         a.set_title("Image")
         plt.imshow(image)
 

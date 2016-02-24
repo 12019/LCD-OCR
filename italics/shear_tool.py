@@ -1,7 +1,7 @@
 import numpy as np
 import math
 import cv2
-from utils.utils import Utils
+from utilities.utils import Utils
 from croppable_image import CroppableImage
 
 

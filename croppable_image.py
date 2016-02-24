@@ -1,10 +1,9 @@
 import numpy as np
-
 import cv2
-
-from visible.projection import Projection
 from coordinates import Coordinates
-from utils.utils import Utils
+from utilities.utils import Utils
+from visible.area_factory import AreaFactory
+from visible.projection import Projection
 
 
 class CroppableImage:
@@ -94,3 +93,6 @@ class CroppableImage:
 
     def get_projections_object(self, count, orientation, interpolation_type=cv2.INTER_AREA):
         return Projection(self.get_ndarray(), count, orientation, interpolation_type)
+
+    def get_area_factory(self, count, orientation):
+        return AreaFactory(self.ndarray, count, self.coord, orientation)
