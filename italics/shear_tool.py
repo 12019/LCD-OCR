@@ -1,8 +1,9 @@
-import numpy as np
 import math
+import numpy as np
+
 import cv2
-from utilities.utils import Utils
-from croppable_image import CroppableImage
+
+from utilities.croppable_image import CroppableImage
 
 
 class ShearTool:

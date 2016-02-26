@@ -1,29 +1,26 @@
-# -*- coding: utf-8 -*-
-
 import numpy as np
 from operator import itemgetter
-
 import cv2
 
-from utilities.utils import Utils
+from utilities.visualizer import Visualizer
 
 
 class Projection:
     image = None
-    bins_count = -1
+    measurement = -1
     orientation = None
 
-    TYPE_VERTICAL = 0
-    TYPE_HORIZONTAL = 1
+    TYPE_VERTICAL = 1
+    TYPE_HORIZONTAL = 0
 
     projection = []
 
-    def __init__(self, full_color_ndarray, count, orientation, blur_percent=0.2):
+    def __init__(self, full_color_ndarray, orientation, blur_percent=0.2):
         # todo make orientation the second parameter
         assert isinstance(full_color_ndarray, np.ndarray)
         assert len(full_color_ndarray.shape) == 2, "Not a valid visible"
         self.image = Projection.preprocess_image(full_color_ndarray, blur_percent)
-        self.bins_count = count
+        self.measurement = full_color_ndarray.shape[orientation]
         self.orientation = orientation
 
     @staticmethod
@@ -55,10 +52,10 @@ class Projection:
         0.53275109170305679
         >>> # bins.debug("colorful vertical")  # todo AttributeError: 'NoneType' object has no attribute 'tk'
         """
-        new_shape = (1, self.bins_count) if self.orientation == self.TYPE_VERTICAL else (self.bins_count, 1)
+        new_shape = (1, self.measurement) if self.orientation == self.TYPE_VERTICAL else (self.measurement, 1)
         vector = cv2.resize(self.image, new_shape, interpolation=interpolation_type).flatten()
         vector = 255 - vector
-        assert len(vector) == self.bins_count
+        assert len(vector) == self.measurement
         return Projection.normalize(vector)
 
     def make_binary_projection(self):
@@ -81,11 +78,11 @@ class Projection:
         # binary = cv2.adaptiveThreshold(self.image, max_value, adaptive_method, cv2.THRESH_BINARY_INV, block_size, c)
         th, binary = cv2.threshold(self.image, 127, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
         shape = list(binary.shape)
-        shape[1-self.orientation] = self.bins_count
+        shape[self.orientation] = self.measurement
         binary = cv2.resize(binary, tuple(shape), cv2.INTER_CUBIC)
         binary[binary > 0] = 1
-        vector = np.sum(binary, axis=1-self.orientation)
-        assert len(vector) == self.bins_count
+        vector = np.sum(binary, axis=self.orientation)
+        assert len(vector) == self.measurement
         return Projection.normalize(vector)
 
     def get_peaks(self):
@@ -115,4 +112,4 @@ class Projection:
 
     def debug(self, window_title="Projection"):
         th, binary = cv2.threshold(self.image, 127, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
-        Utils.plot_projection(self.make_binary_projection(), binary, window_title)
+        Visualizer.plot_projection(self.make_binary_projection(), binary, window_title)

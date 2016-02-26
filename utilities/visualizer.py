@@ -1,11 +1,11 @@
-import math
 import numpy as np
 from matplotlib import pyplot as plt
 import os
 import cv2
+from utilities.rectangle import Rectangle
 
 
-class Utils:
+class Visualizer:
 
     def __init__(self):
         assert False, "This class is for static methods only"
@@ -66,31 +66,35 @@ class Utils:
         height, width = shape
         canvas = np.zeros((height, width, 3), np.uint8)
         cv2.drawContours(canvas, contours, contour_id, (0, 255, 0), 3)
-        Utils.show_image(canvas, "Contours")
+        Visualizer.show_image(canvas, "Contours")
 
     @staticmethod
-    def subimage_rotated(image, center, theta, width, height):
-        theta *= 3.14159 / 180
-        v_x = (math.cos(theta), math.sin(theta))
-        v_y = (-math.sin(theta), math.cos(theta))
-        s_x = center[0] - v_x[0] * (width / 2) - v_y[0] * (height / 2)
-        s_y = center[1] - v_x[1] * (width / 2) - v_y[1] * (height / 2)
+    def outline(ndarray, first_coord_list, second_coord_list=None, window_title="Outline"):
+        """Visual representation of target areas
 
-        mapping = np.array([[v_x[0], v_y[0], s_x],
-                            [v_x[1], v_y[1], s_y]])
+        :param ndarray: visible
+        :param first_coord_list, second_coord_list: list of Coordinate objects
+        :return:
 
-        return cv2.warpAffine(image, mapping, (width, height), flags=cv2.WARP_INVERSE_MAP,
-                              borderMode=cv2.BORDER_REPLICATE)
-
-    @staticmethod
-    def angles_to_points(lines):
-        for rho, theta in lines:
-            a = np.cos(theta)
-            b = np.sin(theta)
-            x0 = a*rho
-            y0 = b*rho
-            x1 = int(x0 + 100*(-b))
-            y1 = int(y0 + 100*(a))
-            x2 = int(x0 - 100*(-b))
-            y2 = int(y0 - 100*(a))
-            yield (x1, y1), (x2, y2)
+        >>> arr = cv2.imread('assets/img/doctests/photo.jpg', 0)
+        >>> r1 = Rectangle(400, 500, 1200, 300)
+        >>> r2 = Rectangle(100, 400, 150, 300)
+        >>> r3 = Rectangle(250, 200, 500, 100)
+        >>> Visualizer.outline(arr, [r1, r2], [r3])
+        """
+        assert isinstance(ndarray, np.ndarray)
+        for coord in first_coord_list:
+            ndarray = cv2.rectangle(
+                ndarray,
+                (int(coord.left), int(coord.top)),
+                (int(coord.left + coord.width), int(coord.top + coord.height)),
+                (0, 255, 0),
+                10)
+        for coord in second_coord_list or []:
+            ndarray = cv2.rectangle(
+                ndarray,
+                (int(coord.left), int(coord.top)),
+                (int(coord.left + coord.width), int(coord.top + coord.height)),
+                (255, 0, 255),
+                10)
+        Visualizer.show_image(ndarray, window_title)

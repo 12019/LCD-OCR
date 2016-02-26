@@ -1,9 +1,7 @@
 import numpy as np
 
-import cv2
-
 from italics.shear_tool import ShearTool
-from visible.projection import Projection
+from utilities.projection import Projection
 
 
 class FontNormalizer:
@@ -33,7 +31,7 @@ class FontNormalizer:
         """
         obj = ShearTool(self.img)
         corrected = obj.shear(angle)
-        p = Projection(corrected, self.img.shape[1], Projection.TYPE_HORIZONTAL)
+        p = Projection(corrected, Projection.TYPE_HORIZONTAL)
         peaks = p.get_peaks()
         p.debug()
         print list(peaks)
@@ -42,7 +40,6 @@ class FontNormalizer:
     def find_inclination(self):
         weights = self.calculate_weights()
         weights = list(weights)
-        values = [val for (idx, val) in weights]
         val, idx = max((abs(val), idx) for (idx, val) in weights)
         # print val, idx
         return idx

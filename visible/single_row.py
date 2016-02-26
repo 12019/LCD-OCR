@@ -2,10 +2,10 @@ import numpy as np
 
 import cv2
 
-from coordinates import Coordinates
-from visible.area_factory import AreaFactory
-from visible.outline import Outline
-from visible.projection import Projection
+from utilities.area_factory import AreaFactory
+from utilities.projection import Projection
+from utilities.rectangle import Rectangle
+from utilities.visualizer import Visualizer
 
 
 class SingleRow:
@@ -31,12 +31,12 @@ class SingleRow:
 
     def __init__(self, ndarray, basis=None):
         assert isinstance(ndarray, np.ndarray)
-        assert (basis is None) or isinstance(basis, Coordinates)
+        assert (basis is None) or isinstance(basis, Rectangle)
         self.img = ndarray
-        self.factory = AreaFactory(ndarray, 100, basis, Projection.TYPE_HORIZONTAL)
+        self.factory = AreaFactory(ndarray, Projection.TYPE_HORIZONTAL, basis, 100)
 
     def extract_digits_areas(self):
         return self.factory.find_areas()
 
     def debug(self, window_title="Find digits"):
-        Outline(self.img, self.extract_digits_areas()).show(window_title)
+        Visualizer.outline(self.img, self.extract_digits_areas(), window_title=window_title)

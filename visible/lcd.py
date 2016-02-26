@@ -2,10 +2,10 @@ import numpy as np
 
 import cv2
 
-from coordinates import Coordinates
-from croppable_image import CroppableImage
-from visible.projection import Projection
-from visible.outline import Outline
+from utilities.croppable_image import CroppableImage
+from utilities.projection import Projection
+from utilities.rectangle import Rectangle
+from utilities.visualizer import Visualizer
 from visible.single_row import SingleRow
 
 
@@ -24,13 +24,13 @@ class LCD:
 
     def __init__(self, ndarray, basis=None):
         assert isinstance(ndarray, np.ndarray)
-        assert (basis is None) or isinstance(basis, Coordinates)
+        assert (basis is None) or isinstance(basis, Rectangle)
         ndarray = cv2.equalizeHist(ndarray)
         self.img = CroppableImage(ndarray, basis)
         self.img.crop_borders(0.1)
 
     def extract_rows(self):
-        self.factory = self.img.get_area_factory(self.bins_count, Projection.TYPE_VERTICAL)
+        self.factory = self.img.get_subimages(self.bins_count, Projection.TYPE_VERTICAL)
         return self.factory.find_areas()
 
     def extract_areas(self):
@@ -40,8 +40,4 @@ class LCD:
                 yield coord
 
     def debug(self, window_title="Find rows"):
-        Outline(
-            self.img.ndarray
-            , self.extract_rows()
-            # , self.extract_areas()
-        ).show(window_title)
+        Visualizer.outline(self.img.ndarray, self.extract_rows(), window_title=window_title)

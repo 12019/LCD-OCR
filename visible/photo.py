@@ -1,12 +1,13 @@
+import math
 import numpy as np
 import os
 
 import cv2
-from visible.outline import Outline
-from visible.lcd import LCD
+
 from qa.quality_assurance import QualityAssurance
-from utilities.utils import Utils
-from croppable_image import CroppableImage
+from utilities.croppable_image import CroppableImage
+from utilities.visualizer import Visualizer
+from visible.lcd import LCD
 
 
 class Photo:
@@ -41,7 +42,7 @@ class Photo:
         assert len(rectangles), "No LCD display found"
 
         center, shape, angle = cv2.minAreaRect(rectangles[0])
-        self.subimage = Utils.subimage_rotated(self.img, center, angle, int(shape[0]), int(shape[1]))
+        self.subimage = Photo.subimage_rotated(self.img, center, angle, int(shape[0]), int(shape[1]))
         if self.subimage.shape[0] > self.subimage.shape[1]:
             self.subimage = np.rot90(self.subimage)
         if write_lcd:
@@ -63,11 +64,9 @@ class Photo:
             out = self.digits_path % (self.current, i + 1)
             cv2.imwrite(out, ci.get_ndarray())
 
-    def debug(self):
+    def debug(self, window_title="Photo"):
         assert self.coords_list and self.subimage.shape
-        # http://stackoverflow.com/questions/23830618/python-opencv-typeerror-layout-of-the-output-array-incompatible-with-cvmat
-        o = Outline(self.subimage.copy(), self.extract_areas_with_digits())
-        o.show()
+        Visualizer.outline(self.subimage, self.extract_areas_with_digits(), window_title=window_title)
 
     @staticmethod
     def _polygon_area(corners):
@@ -100,3 +99,18 @@ class Photo:
         # print [self.polygon_area(cnt) for cnt in remaining]
         # print [self.calculate_rectangularity(cnt) for cnt in remaining]
         return sorted(remaining, key=cv2.contourArea, reverse=True)
+
+    @staticmethod
+    def subimage_rotated(image, center, theta, width, height):
+        theta *= 3.14159 / 180
+        v_x = (math.cos(theta), math.sin(theta))
+        v_y = (-math.sin(theta), math.cos(theta))
+        s_x = center[0] - v_x[0] * (width / 2) - v_y[0] * (height / 2)
+        s_y = center[1] - v_x[1] * (width / 2) - v_y[1] * (height / 2)
+
+        mapping = np.array([[v_x[0], v_y[0], s_x],
+                            [v_x[1], v_y[1], s_y]])
+
+        return cv2.warpAffine(image, mapping, (width, height), flags=cv2.WARP_INVERSE_MAP,
+                              borderMode=cv2.BORDER_REPLICATE)
+
