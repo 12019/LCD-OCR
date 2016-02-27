@@ -2,14 +2,15 @@ import numpy as np
 
 import cv2
 
-from utilities.area_factory import AreaFactory
+from croppable.area_factory import AreaFactory
 from utilities.rectangle import Rectangle
-from utilities.visualizer import Visualizer
+from utilities.plotter import Plotter
 
 
 class CroppableImage:
     ndarray = None
     coord = None
+    latest_projection = None  # may be None
 
     def __init__(self, ndarray, basis=None):
         assert isinstance(ndarray, np.ndarray)
@@ -19,9 +20,6 @@ class CroppableImage:
             self.coord = basis
         else:
             self.coord = Rectangle.from_ndarray(self.ndarray)
-
-    def __str__(self):
-        return str(self.coord)
 
     def reset(self):
         self.coord = Rectangle.from_ndarray(self.ndarray)
@@ -52,13 +50,14 @@ class CroppableImage:
         >>> new_arr = arr[72:572, 0:1000]
         >>> i.get_custom_shape() == new_arr.shape
         True
-        >>> i.debug('custom shape test')
+        >>> # i.debug('custom shape test')
         """
         return self.coord.get_shape()
 
     def get_ndarray(self):
-        return self.ndarray[self.coord.top:self.coord.top+self.coord.height,
-                            self.coord.left:self.coord.left+self.coord.width]
+        return self.ndarray[
+               self.coord.top:self.coord.top+self.coord.height,
+               self.coord.left:self.coord.left+self.coord.width]
 
     def crop(self, coord):
         """Virtual crop
@@ -66,6 +65,21 @@ class CroppableImage:
         :param coord - instance of Coordinates object
         """
         self.coord.crop(coord)
+
+    def get_subimages(self, orientation):
+        """
+        >>> arr = cv2.imread('assets/img/doctests/digits.jpg', 0)
+        >>> ci = CroppableImage(arr)
+        >>> from croppable.projection import Projection
+        >>> subimages = list(ci.get_subimages(Projection.TYPE_HORIZONTAL))
+        >>> subimages
+        [(0:572, 184:838) out of (572, 1310)]
+        >>> # subimages[0].debug("subimage 1")
+        """
+        factory = AreaFactory(self.ndarray, orientation, self.coord)
+        self.latest_projection = factory.get_projection()
+        areas = factory.find_areas()
+        return [CroppableImage(self.ndarray, area) for area in areas]
 
     # def crop_borders(self, vertical_percent):
     #     """
@@ -82,23 +96,11 @@ class CroppableImage:
     #     """
     #     self.coord.crop_borders(vertical_percent)
 
-    def get_subimages(self, orientation, count=100):
-        """
-        >>> arr = cv2.imread('assets/img/doctests/digits.jpg', 0)
-        >>> ci = CroppableImage(arr)
-        >>> from utilities.projection import Projection
-        >>> subimages = list(ci.get_subimages(Projection.TYPE_HORIZONTAL))
-        >>> subimages
-        [(0:572, 169:1009) out of (572, 1310)]
-        >>> subimages[0].debug("subimage 1")
-        """
-        factory = AreaFactory(self.ndarray, orientation, self.coord, count)
-        # factory.debug('area factory')
-        areas = factory.find_areas()
-        return [CroppableImage(self.ndarray, area) for area in areas]
+    def __repr__(self):
+        return "<CroppableImage %s out of %s>" % (self.coord, self.ndarray.shape)
+
+    def __str__(self):
+        return str(self.coord)
 
     def debug(self, window_title="Image"):
-        Visualizer.outline(self.ndarray, [self.coord], window_title=window_title)
-
-    def __repr__(self):
-        return "%s out of %s" % (self.coord, self.ndarray.shape)
+        Plotter.outline_rectangles(self.ndarray, [self.coord], [], window_title, self.latest_projection)

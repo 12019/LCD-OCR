@@ -3,7 +3,7 @@ import numpy as np
 
 import cv2
 
-from utilities.croppable_image import CroppableImage
+from croppable.croppable_image import CroppableImage
 
 
 class ShearTool:

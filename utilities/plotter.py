@@ -2,16 +2,17 @@ import numpy as np
 from matplotlib import pyplot as plt
 import os
 import cv2
+
 from utilities.rectangle import Rectangle
 
 
-class Visualizer:
+class Plotter:
 
     def __init__(self):
-        assert False, "This class is for static methods only"
+        assert False, "This class made exclusively for static methods"
 
     @staticmethod
-    def show_image(image, window_title, image_map=None):
+    def image(image, window_title, image_map=None):
         if 'DISPLAY' not in os.environ:
             return
         plot = plt.imshow(image, image_map)
@@ -21,10 +22,10 @@ class Visualizer:
         plt.show()
 
     @staticmethod
-    def show_images(images, labels, window_title):
+    def images(images, labels, window_title):
         """
         >>> arr = cv2.imread("assets/img/doctests/single_line_lcd.jpg", 0)
-        >>> # Utils.show_images([arr, arr], ['t', 't'], "general title")
+        >>> # Visualizer.show_images([arr, arr], ['t', 't'], "general title")
         """
         if 'DISPLAY' not in os.environ:
             return
@@ -38,7 +39,7 @@ class Visualizer:
         plt.show()
 
     @staticmethod
-    def plot_projection(projection, image, window_title="Projection"):
+    def projection(projection, image, window_title="Projection"):
         projection = np.array(projection).squeeze()
 
         fig = plt.figure()
@@ -62,39 +63,54 @@ class Visualizer:
         plt.show()
 
     @staticmethod
-    def show_contour(shape, contours, contour_id=-1):
+    def contour(shape, contours, contour_id=-1):
         height, width = shape
         canvas = np.zeros((height, width, 3), np.uint8)
         cv2.drawContours(canvas, contours, contour_id, (0, 255, 0), 3)
-        Visualizer.show_image(canvas, "Contours")
+        Plotter.image(canvas, "Contours")
 
     @staticmethod
-    def outline(ndarray, first_coord_list, second_coord_list=None, window_title="Outline"):
+    def outline_rectangles(ndarray, first_rect_list, second_rect_list=None, window_title="Outline", projection=None):
         """Visual representation of target areas
 
         :param ndarray: visible
         :param first_coord_list, second_coord_list: list of Coordinate objects
         :return:
 
-        >>> arr = cv2.imread('assets/img/doctests/photo.jpg', 0)
-        >>> r1 = Rectangle(400, 500, 1200, 300)
-        >>> r2 = Rectangle(100, 400, 150, 300)
-        >>> r3 = Rectangle(250, 200, 500, 100)
-        >>> Visualizer.outline(arr, [r1, r2], [r3])
+        >>> arr = cv2.imread('assets/img/doctests/multi_line_lcd.jpg', 0)  # 384x344
+        >>> r1 = Rectangle(100, 100, 100, 100)
+        >>> r2 = Rectangle(200, 100, 200, 100)
+        >>> r3 = Rectangle(0, 100, 200, 100)
+        >>> # Plotter.outline(arr, [r1, r2], [r3])
         """
         assert isinstance(ndarray, np.ndarray)
-        for coord in first_coord_list:
+        ndarray = ndarray.copy()  # http://stackoverflow.com/questions/23830618/
+        for coord in first_rect_list:
             ndarray = cv2.rectangle(
                 ndarray,
                 (int(coord.left), int(coord.top)),
                 (int(coord.left + coord.width), int(coord.top + coord.height)),
                 (0, 255, 0),
                 10)
-        for coord in second_coord_list or []:
+        for coord in second_rect_list or []:
             ndarray = cv2.rectangle(
                 ndarray,
                 (int(coord.left), int(coord.top)),
                 (int(coord.left + coord.width), int(coord.top + coord.height)),
                 (255, 0, 255),
                 10)
-        Visualizer.show_image(ndarray, window_title)
+        image_title = "%s %s %s" % (window_title, list(first_rect_list), list(second_rect_list or []) or "")
+        if projection is not None:
+            Plotter.projection(projection, ndarray, image_title)
+        else:
+            Plotter.image(ndarray, image_title)
+
+    @staticmethod
+    def outline_subimages(main_image, first_subimages_list, second_subimages_list=None, window_title="Outline"):
+        assert not isinstance(main_image, np.ndarray)
+        assert isinstance(first_subimages_list, list)
+        assert not isinstance(first_subimages_list[0], np.ndarray)
+        ndarray = main_image.ndarray
+        first_rect_list = [ci.coord for ci in first_subimages_list]
+        second_rect_list = [ci.coord for ci in second_subimages_list or []]
+        Plotter.outline_rectangles(ndarray, first_rect_list, second_rect_list, window_title, main_image.latest_projection)

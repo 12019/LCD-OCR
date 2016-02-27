@@ -19,9 +19,6 @@ class Rectangle:
     def from_ndarray(cls, a):
         return cls(0, a.shape[0], 0, a.shape[1])
 
-    def __repr__(self):
-        return "(%d:%d, %d:%d)" % (self.top, self.height, self.left, self.width)
-
     def get_shape(self):
         assert self.width - self.left > self.height - self.top
         return self.height - self.top, self.width - self.left
@@ -99,3 +96,6 @@ class Rectangle:
         self.width -= pixels
         self.top += pixels
         self.height -= pixels
+
+    def __repr__(self):
+        return "<Rectangle %d:%d, %d:%d>)" % (self.top, self.height, self.left, self.width)

@@ -8,6 +8,6 @@ print files
 for f in files[:]:
     try:
         p = Photo(f)
-        print p.extract_areas_with_digits(True, True)
+        print p.get_lcd_object()
     except AssertionError as e:
         print e

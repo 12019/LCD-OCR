@@ -1,7 +1,7 @@
 import numpy as np
 
+from croppable.projection import Projection
 from italics.shear_tool import ShearTool
-from utilities.projection import Projection
 
 
 class FontNormalizer:

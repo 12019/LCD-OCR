@@ -1,42 +1,27 @@
-import numpy as np
-
 import cv2
 
-from utilities.area_factory import AreaFactory
-from utilities.projection import Projection
-from utilities.rectangle import Rectangle
-from utilities.visualizer import Visualizer
+from croppable.croppable_image import CroppableImage
+from croppable.projection import Projection
+from utilities.plotter import Plotter
 
 
 class SingleRow:
     """
-    >>> import os
-    >>> row_path = 'assets/img/doctests/row.jpg'
-    >>> os.path.isfile(row_path)
-    True
-    >>> img = cv2.imread(row_path, 0)
-    >>> img.shape
-    (495, 1257)
-    >>> r = SingleRow(img)
+    >>> img = cv2.imread('assets/img/doctests/row.jpg', 0)
+    >>> r = SingleRow(CroppableImage(img))
     >>> e = list(r.extract_digits_areas())
     >>> e
-    [(0:495, 150:1005)]
-    >>> r.debug()
+    [(0:495, 169:850) out of (495, 1257)]
+    >>> # r.debug()  # todo why offset
     """
-    img = bins = None
-    bins_count = 10
-    threshold = 200
-    areas = None
-    factory = None
+    image = None
 
-    def __init__(self, ndarray, basis=None):
-        assert isinstance(ndarray, np.ndarray)
-        assert (basis is None) or isinstance(basis, Rectangle)
-        self.img = ndarray
-        self.factory = AreaFactory(ndarray, Projection.TYPE_HORIZONTAL, basis, 100)
+    def __init__(self, image):
+        assert isinstance(image, CroppableImage)
+        self.image = image
 
     def extract_digits_areas(self):
-        return self.factory.find_areas()
+        return self.image.get_subimages(Projection.TYPE_HORIZONTAL)
 
     def debug(self, window_title="Find digits"):
-        Visualizer.outline(self.img, self.extract_digits_areas(), window_title=window_title)
+        Plotter.outline_subimages(self.image, self.extract_digits_areas(), window_title=window_title)
