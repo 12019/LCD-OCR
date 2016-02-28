@@ -1,7 +1,7 @@
 import cv2
 
 from croppable.croppable_image import CroppableImage
-from croppable.projection import Projection
+from projection.abstract import Projection
 from utilities.plotter import Plotter
 from visible.single_row import SingleRow
 
@@ -12,18 +12,18 @@ class LCD:
     >>> obj = LCD(CroppableImage(img))
     >>> areas = list(obj.extract_rows())
     >>> areas
-    [(0:572, 0:1310) out of (572, 1310)]
-    >>> digits = list(obj.get_lcd_object())
+    [<CroppableImage 0+572, 0+1310 out of (572, 1310)>]
+    >>> digits = list(obj.extract_areas_with_digits())
     >>> digits
-    [[(0:572, 184:838) out of (572, 1310)]]
+    [<CroppableImage 0+572, 184+838 out of (572, 1310)>]
     >>> # obj.debug()
     >>>
-    >>> img = cv2.imread("assets/img/doctests/multi_line_lcd.jpg", 0)
+    >>> img = cv2.imread("assets/img/doctests/multi_line_lcd.jpg", 0)  # todo multiline display thresholding
     >>> obj = LCD(CroppableImage(img))
     >>> digits = list(obj.extract_areas_with_digits())
     >>> digits
-    [[(0:572, 184:838) out of (572, 1310)]]
-    >>> obj.debug()  # todo
+    [<CroppableImage 0+344, 0+384 out of (344, 384)>]
+    >>> # obj.debug()  # todo
     """
     image = None
 

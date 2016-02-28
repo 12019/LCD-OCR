@@ -1,7 +1,7 @@
 import cv2
 
 from croppable.croppable_image import CroppableImage
-from croppable.projection import Projection
+from projection.abstract import Projection
 from utilities.plotter import Plotter
 
 
@@ -11,7 +11,7 @@ class SingleRow:
     >>> r = SingleRow(CroppableImage(img))
     >>> e = list(r.extract_digits_areas())
     >>> e
-    [(0:495, 169:850) out of (495, 1257)]
+    [<CroppableImage 0+495, 169+850 out of (495, 1257)>]
     >>> # r.debug()  # todo why offset
     """
     image = None

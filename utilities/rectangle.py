@@ -47,7 +47,7 @@ class Rectangle:
         >>> split_one.shape == c.get_shape()
         True
         >>> str(c)
-        '(310:510, 100:1000)'
+        '<Rectangle 310+510, 100+1000>'
         >>>
         >>> # second crop
         >>> c.crop(Rectangle(100, 200, 100, 500))
@@ -58,7 +58,7 @@ class Rectangle:
         >>> arr[310:510, 100:1000][100:200, 100:500].shape == c.get_shape()
         True
         >>> str(c)
-        '(410:510, 200:600)'
+        '<Rectangle 410+510, 200+600>'
         """
         if coord.width:
             self.width = coord.width + self.left
@@ -84,7 +84,7 @@ class Rectangle:
 
         >>> c = Rectangle(200, 400, 0, 1000)
         >>> c
-        (200:400, 0:1000)
+        <Rectangle 200+400, 0+1000>
         >>> c.get_shape()
         (200, 1000)
         >>> c.crop_borders(0.1)
@@ -98,4 +98,4 @@ class Rectangle:
         self.height -= pixels
 
     def __repr__(self):
-        return "<Rectangle %d:%d, %d:%d>)" % (self.top, self.height, self.left, self.width)
+        return "<Rectangle %d+%d, %d+%d>" % (self.top, self.height, self.left, self.width)

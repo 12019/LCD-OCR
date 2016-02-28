@@ -12,7 +12,7 @@ class Plotter:
         assert False, "This class made exclusively for static methods"
 
     @staticmethod
-    def image(image, window_title, image_map=None):
+    def image(image, window_title="Plotter", image_map=None):
         if 'DISPLAY' not in os.environ:
             return
         plot = plt.imshow(image, image_map)
@@ -22,7 +22,7 @@ class Plotter:
         plt.show()
 
     @staticmethod
-    def images(images, labels, window_title):
+    def images(images, labels, window_title="Plotter"):
         """
         >>> arr = cv2.imread("assets/img/doctests/single_line_lcd.jpg", 0)
         >>> # Visualizer.show_images([arr, arr], ['t', 't'], "general title")

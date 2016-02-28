@@ -1,8 +1,9 @@
 import cv2
 
-from croppable.projection import Projection
-from utilities.rectangle import Rectangle
+from projection.abstract import Projection
+from projection.binary import BinaryProjection
 from utilities.plotter import Plotter
+from utilities.rectangle import Rectangle
 
 
 class AreaFactory:
@@ -10,13 +11,13 @@ class AreaFactory:
     >>> arr = cv2.imread('assets/img/doctests/digits.jpg', 0)
     >>> f = AreaFactory(arr, Projection.TYPE_VERTICAL, Rectangle.from_ndarray(arr))
     >>> list(f.find_areas())
-    [(0:572, 0:1310)]
+    [<Rectangle 0+572, 0+1310>]
     >>> # f.debug('area factory vertical')
     >>>
     >>> arr = cv2.imread('assets/img/doctests/digits.jpg', 0)
     >>> f = AreaFactory(arr, Projection.TYPE_HORIZONTAL, Rectangle.from_ndarray(arr))
     >>> list(f.find_areas())
-    [(0:572, 184:838)]
+    [<Rectangle 0+572, 184+838>]
     >>> # f.debug('area factory horizontal')
     """
     img = None
@@ -27,7 +28,7 @@ class AreaFactory:
     def __init__(self, full_color_image, orientation, basis):
         # Projection(full_color_image, orientation, 0.2).debug()
         self.img = full_color_image
-        self.projection = Projection(full_color_image, orientation)
+        self.projection = BinaryProjection(full_color_image, orientation)
         self.basis = basis or Rectangle.from_ndarray(full_color_image)
         self.measurement = full_color_image.shape[orientation]
 
@@ -40,7 +41,7 @@ class AreaFactory:
         return self._convert_ranges_into_coordinates(self.basis, ranges)
 
     def get_projection(self):
-        return self.projection.make_binary_projection()
+        return self.projection.get_projection()
 
     def _split_peaks_into_ranges(self):
         peaks = list(self.projection.get_peaks())

@@ -70,10 +70,10 @@ class CroppableImage:
         """
         >>> arr = cv2.imread('assets/img/doctests/digits.jpg', 0)
         >>> ci = CroppableImage(arr)
-        >>> from croppable.projection import Projection
+        >>> from projection.abstract import Projection
         >>> subimages = list(ci.get_subimages(Projection.TYPE_HORIZONTAL))
         >>> subimages
-        [(0:572, 184:838) out of (572, 1310)]
+        [<CroppableImage 0+572, 184+838 out of (572, 1310)>]
         >>> # subimages[0].debug("subimage 1")
         """
         factory = AreaFactory(self.ndarray, orientation, self.coord)
@@ -97,7 +97,9 @@ class CroppableImage:
     #     self.coord.crop_borders(vertical_percent)
 
     def __repr__(self):
-        return "<CroppableImage %s out of %s>" % (self.coord, self.ndarray.shape)
+        return "<CroppableImage %s+%s, %s+%s out of %s>" % \
+               (self.coord.top, self.coord.height, self.coord.left, self.coord.width,
+                self.ndarray.shape)
 
     def __str__(self):
         return str(self.coord)

@@ -17,7 +17,7 @@ class ShearTool:
     def __init__(self, img):
         assert isinstance(img, np.ndarray)
         i = CroppableImage(img)
-        i.crop_borders(0.05)
+        # i.crop_borders(0.05)
         self.img = i.get_ndarray()
         self.height, self.width = self.img.shape
 

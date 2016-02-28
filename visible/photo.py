@@ -18,8 +18,8 @@ class Photo:
     <LCD 620x1437>
     >>> images = lcd.extract_areas_with_digits()
     >>> images
-    [<CroppableImage <Rectangle 0:620, 57:1255>) out of (620, 1437)>]
-    >>> lcd.debug()
+    [<CroppableImage 0+620, 57+1255 out of (620, 1437)>]
+    >>> # lcd.debug()
     """
     current = 11
     img = subimage = None
