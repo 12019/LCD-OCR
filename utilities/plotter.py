@@ -40,6 +40,8 @@ class Plotter:
 
     @staticmethod
     def projection(projection, image, window_title="Projection"):
+        if 'DISPLAY' not in os.environ:
+            return
         projection = np.array(projection).squeeze()
 
         fig = plt.figure()
@@ -47,7 +49,7 @@ class Plotter:
 
         a = fig.add_subplot(311)
         a.set_title("Derivative")
-        derivative = np.gradient(projection) / projection
+        derivative = np.gradient(projection)  # / projection
         plt.plot(derivative)
         plt.plot([2.5 * np.std(derivative)] * len(derivative))
         plt.plot([-2.5 * np.std(derivative)] * len(derivative))

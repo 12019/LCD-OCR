@@ -1,21 +1,25 @@
 import numpy as np
+import cv2
 
 from italics.shear_tool import ShearTool
 from projection.abstract import Projection
+from projection.binary import BinaryProjection
+from utilities.plotter import Plotter
 
 
 class FontNormalizer:
-    # """
-    # >>> before = cv2.imread('assets/img/doctests/digits.jpg', 0)
-    # >>> obj = FontNormalizer(before)
-    # >>> incl = obj.find_inclination()
-    # >>> incl  # todo it should be closer to 8.0
-    # 3.0
-    # >>> first = obj.normalize_font(incl)
-    # >>> obj2 = FontNormalizer(first)
-    # >>> obj2.find_inclination()
-    # 0.0
-    # """
+    """
+    >>> before = cv2.imread('assets/img/doctests/digits.jpg', 0)
+    >>> obj = FontNormalizer(before)
+    >>> incl = obj.find_inclination()
+    >>> incl  # todo it should be closer to 8.0
+    2.0
+    >>> first = obj.normalize_font(incl)
+    >>> # Plotter.image(first, "normalized image")
+    >>> obj2 = FontNormalizer(first)
+    >>> obj2.find_inclination()
+    0.0
+    """
     img = None
 
     def __init__(self, img):
@@ -27,15 +31,12 @@ class FontNormalizer:
             yield angle, self.calculate_single_weight(angle)
 
     def calculate_single_weight(self, angle):
-        """Finds the most strong gradient in the image
-        """
+        """Finds the strongest gradient in the image"""
         obj = ShearTool(self.img)
         corrected = obj.shear(angle)
-        p = Projection(corrected, Projection.TYPE_HORIZONTAL)
-        peaks = p.get_peaks()
-        p.debug()
-        print list(peaks)
-        return len(list(peaks))
+        p = BinaryProjection(corrected, Projection.TYPE_HORIZONTAL)
+        # p.debug()
+        return max(np.gradient(p.get_projection())) + abs(min(np.gradient(p.get_projection())))
 
     def find_inclination(self):
         weights = self.calculate_weights()

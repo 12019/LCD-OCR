@@ -4,12 +4,13 @@ import numpy as np
 import cv2
 
 from croppable.croppable_image import CroppableImage
+from utilities.plotter import Plotter
 
 
 class ShearTool:
     """
     >>> st = ShearTool(cv2.imread('assets/img/doctests/digits.jpg', 0))
-    >>> # Utils.show_image(st.shear(30), "shear")
+    >>> # Plotter.image(st.shear(30), "shear")
     """
     img = None
     height = width = 0

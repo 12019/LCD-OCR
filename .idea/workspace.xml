@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/italics/font_normalizer.py" line="38" />
+    <bookmark url="file://$PROJECT_DIR$/italics/font_normalizer.py" line="39" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1d8a138-43f8-4415-849d-0bfd81b4b314" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/oceinic.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/oceinic.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projection/adaptive.py" afterPath="$PROJECT_DIR$/projection/adaptive.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/italics/font_normalizer.py" afterPath="$PROJECT_DIR$/italics/font_normalizer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/italics/shear_tool.py" afterPath="$PROJECT_DIR$/italics/shear_tool.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utilities/plotter.py" afterPath="$PROJECT_DIR$/utilities/plotter.py" />
     </list>
     <ignored path="opencv.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="abstract.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projection/abstract.py">
+      <file leaf-file-name="font_normalizer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/italics/font_normalizer.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="65" column="45" selection-start-line="65" selection-start-column="45" selection-end-line="65" selection-end-column="45" />
+              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -40,27 +42,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adaptive.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/projection/adaptive.py">
+      <file leaf-file-name="plotter.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/utilities/plotter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36682615">
-              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.93301433">
+              <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
               <folding>
-                <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.16129">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -77,13 +66,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ocr.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ocr.py">
+      <file leaf-file-name="abstract.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projection/abstract.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
               <folding>
-                <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -129,7 +118,6 @@
         <option value="$PROJECT_DIR$/visible/outline.py" />
         <option value="$PROJECT_DIR$/visible/area_factory.py" />
         <option value="$PROJECT_DIR$/croppable_image.py" />
-        <option value="$PROJECT_DIR$/italics/font_normalizer.py" />
         <option value="$PROJECT_DIR$/utilities/coordinates.py" />
         <option value="$PROJECT_DIR$/utilities/croppable_image.py" />
         <option value="$PROJECT_DIR$/utilities/outline.py" />
@@ -137,7 +125,6 @@
         <option value="$PROJECT_DIR$/utilities/visualizer.py" />
         <option value="$PROJECT_DIR$/utilities/projection.py" />
         <option value="$PROJECT_DIR$/__init__.py" />
-        <option value="$PROJECT_DIR$/utilities/plotter.py" />
         <option value="$PROJECT_DIR$/croppable/projection.py" />
         <option value="$PROJECT_DIR$/utilities/utils.py" />
         <option value="$PROJECT_DIR$/projection/projection.py" />
@@ -147,14 +134,16 @@
         <option value="$PROJECT_DIR$/croppable/croppable_image.py" />
         <option value="$PROJECT_DIR$/visible/single_row.py" />
         <option value="$PROJECT_DIR$/visible/photo.py" />
-        <option value="$PROJECT_DIR$/italics/shear_tool.py" />
         <option value="$PROJECT_DIR$/utilities/rectangle.py" />
         <option value="$PROJECT_DIR$/visible/lcd.py" />
-        <option value="$PROJECT_DIR$/projection/abstract.py" />
-        <option value="$PROJECT_DIR$/projection/binary.py" />
         <option value="$PROJECT_DIR$/ocr.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/projection/adaptive.py" />
+        <option value="$PROJECT_DIR$/italics/shear_tool.py" />
+        <option value="$PROJECT_DIR$/projection/binary.py" />
+        <option value="$PROJECT_DIR$/projection/abstract.py" />
+        <option value="$PROJECT_DIR$/italics/font_normalizer.py" />
+        <option value="$PROJECT_DIR$/utilities/plotter.py" />
       </list>
     </option>
   </component>
@@ -325,7 +314,7 @@
       <recent name="$PROJECT_DIR$/img/tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Travis CI: local">
+  <component name="RunManager" selected="Python tests.Doctests in FontNormalizer">
     <configuration default="false" name="Doctests in SingleRow" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -364,46 +353,6 @@
       <option name="USE_PATTERN" value="true" />
       <method />
     </configuration>
-    <configuration default="false" name="Doctests in rectangle" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="opencv" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utilities/rectangle.py" />
-      <option name="CLASS_NAME" value="Rectangle" />
-      <option name="METHOD_NAME" value="crop_borders" />
-      <option name="FOLDER_NAME" value="$PROJECT_DIR$" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="*.py" />
-      <option name="USE_PATTERN" value="true" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Nosetests in LCD-OCR" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="--with-doctest" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="/usr/bin/python2.7" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="opencv" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="$PROJECT_DIR$" />
-      <option name="TEST_TYPE" value="TEST_FOLDER" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="Doctests in BinaryProjection" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -416,6 +365,44 @@
       <module name="opencv" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/projection/binary.py" />
       <option name="CLASS_NAME" value="BinaryProjection" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="$PROJECT_DIR$" />
+      <option name="TEST_TYPE" value="TEST_CLASS" />
+      <option name="PATTERN" value="*.py" />
+      <option name="USE_PATTERN" value="true" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Doctests in FontNormalizer" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="/usr/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="opencv" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/italics/font_normalizer.py" />
+      <option name="CLASS_NAME" value="FontNormalizer" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="$PROJECT_DIR$" />
+      <option name="TEST_TYPE" value="TEST_CLASS" />
+      <option name="PATTERN" value="*.py" />
+      <option name="USE_PATTERN" value="true" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Doctests in ShearTool" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="/usr/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="opencv" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/italics/shear_tool.py" />
+      <option name="CLASS_NAME" value="ShearTool" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="$PROJECT_DIR$" />
       <option name="TEST_TYPE" value="TEST_CLASS" />
@@ -569,17 +556,17 @@
       <item index="0" class="java.lang.String" itemvalue="Python.Travis CI: local" />
       <item index="1" class="java.lang.String" itemvalue="Python tests.Doctests in SingleRow" />
       <item index="2" class="java.lang.String" itemvalue="Python tests.Doctests in LCD" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Doctests in rectangle" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetests in LCD-OCR" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Doctests in BinaryProjection" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Doctests in BinaryProjection" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Doctests in FontNormalizer" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Doctests in ShearTool" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Doctests in BinaryProjection" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Doctests in LCD" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Doctests in SingleRow" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetests in LCD-OCR" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Doctests in rectangle" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Doctests in FontNormalizer" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Doctests in ShearTool" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Doctests in BinaryProjection" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Doctests in LCD" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Doctests in SingleRow" />
       </list>
     </recent_temporary>
   </component>
@@ -831,39 +818,45 @@
       <option name="project" value="LOCAL" />
       <updated>1456934806159</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="trying to pass travis tests">
+      <created>1456935212839</created>
+      <option name="number" value="00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1456935212839</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Doctests_in_BinaryProjection - 2016.03.02 at 18h 48m 51s.xml">
-      <configuration name="Doctests in BinaryProjection" configurationId="tests" />
+    <history-entry file="Doctests_in_FontNormalizer - 2016.03.02 at 19h 45m 27s.xml">
+      <configuration name="Doctests in FontNormalizer" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_BinaryProjection - 2016.03.02 at 18h 49m 34s.xml">
-      <configuration name="Doctests in BinaryProjection" configurationId="tests" />
+    <history-entry file="Doctests_in_FontNormalizer - 2016.03.02 at 19h 46m 04s.xml">
+      <configuration name="Doctests in FontNormalizer" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_BinaryProjection - 2016.03.02 at 18h 50m 17s.xml">
-      <configuration name="Doctests in BinaryProjection" configurationId="tests" />
+    <history-entry file="Doctests_in_FontNormalizer - 2016.03.02 at 19h 49m 58s.xml">
+      <configuration name="Doctests in FontNormalizer" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_BinaryProjection - 2016.03.02 at 18h 50m 43s.xml">
-      <configuration name="Doctests in BinaryProjection" configurationId="tests" />
+    <history-entry file="Doctests_in_FontNormalizer - 2016.03.02 at 19h 50m 16s.xml">
+      <configuration name="Doctests in FontNormalizer" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_BinaryProjection - 2016.03.02 at 18h 53m 05s.xml">
-      <configuration name="Doctests in BinaryProjection" configurationId="tests" />
+    <history-entry file="Doctests_in_FontNormalizer - 2016.03.02 at 19h 53m 03s.xml">
+      <configuration name="Doctests in FontNormalizer" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_BinaryProjection - 2016.03.02 at 18h 53m 41s.xml">
-      <configuration name="Doctests in BinaryProjection" configurationId="tests" />
+    <history-entry file="Doctests_in_FontNormalizer - 2016.03.02 at 19h 54m 37s.xml">
+      <configuration name="Doctests in FontNormalizer" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_BinaryProjection - 2016.03.02 at 18h 55m 18s.xml">
-      <configuration name="Doctests in BinaryProjection" configurationId="tests" />
+    <history-entry file="Doctests_in_FontNormalizer - 2016.03.02 at 19h 55m 23s.xml">
+      <configuration name="Doctests in FontNormalizer" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_BinaryProjection - 2016.03.02 at 18h 56m 51s.xml">
-      <configuration name="Doctests in BinaryProjection" configurationId="tests" />
+    <history-entry file="Doctests_in_FontNormalizer - 2016.03.02 at 19h 57m 02s.xml">
+      <configuration name="Doctests in FontNormalizer" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_BinaryProjection - 2016.03.02 at 18h 57m 45s.xml">
-      <configuration name="Doctests in BinaryProjection" configurationId="tests" />
+    <history-entry file="Doctests_in_FontNormalizer - 2016.03.02 at 19h 58m 40s.xml">
+      <configuration name="Doctests in FontNormalizer" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_BinaryProjection - 2016.03.02 at 18h 59m 10s.xml">
-      <configuration name="Doctests in BinaryProjection" configurationId="tests" />
+    <history-entry file="Doctests_in_FontNormalizer - 2016.03.02 at 19h 58m 48s.xml">
+      <configuration name="Doctests in FontNormalizer" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -964,9 +957,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="131" />
+      <option name="time" value="132" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="tests">
+        <watch expression="max(np.gradient(p.get_projection()))" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/visible/single_row.py">
@@ -1144,14 +1141,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/italics/font_normalizer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/digits_sharpener.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1194,16 +1183,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utilities/plotter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1254,14 +1233,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/italics/shear_tool.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utilities/rectangle.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1280,32 +1251,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projection/binary.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ocr.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projection/abstract.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="65" column="45" selection-start-line="65" selection-start-column="45" selection-end-line="65" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1321,12 +1272,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/italics/shear_tool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20095694">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/projection/adaptive.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36682615">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projection/binary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projection/abstract.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/italics/font_normalizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utilities/plotter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.93301433">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
