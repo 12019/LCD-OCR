@@ -22,9 +22,13 @@ class AdaptiveProjection(Projection):
     """
 
     def get_projection(self, rows_expected=1):
-        letter_height = self.image.shape[0] * 0.95 / rows_expected
-        stroke_width = self.to_odd(letter_height / 10 * 2)
-        binary = cv2.adaptiveThreshold(self.image, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY_INV, stroke_width, 5)
+        binary = cv2.adaptiveThreshold(
+            self.image,
+            255,
+            cv2.ADAPTIVE_THRESH_MEAN_C,
+            cv2.THRESH_BINARY_INV,
+            self.get_stroke_width(1) * 2,
+            5)
         # th, binary = cv2.threshold(self.image, 127, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
         self.latest_reference_image = binary
         binary[binary > 0] = 1

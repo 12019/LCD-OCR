@@ -16,7 +16,6 @@ class Projection:
     projection = []
 
     def __init__(self, full_color_ndarray, orientation, blur_percent=0.2):
-        # todo make orientation the second parameter
         assert isinstance(full_color_ndarray, np.ndarray)
         assert len(full_color_ndarray.shape) == 2, "Not a valid visible"
         self.image = self.latest_reference_image = Projection.preprocess_image(full_color_ndarray, blur_percent)
@@ -27,7 +26,8 @@ class Projection:
     def preprocess_image(full_color_ndarray, blur_percent):
         blur_kernel = Projection.to_odd(full_color_ndarray.shape[0] * blur_percent)
         img = cv2.equalizeHist(full_color_ndarray)
-        return cv2.medianBlur(img, blur_kernel)
+        img = cv2.medianBlur(img, blur_kernel)
+        return img
 
     @staticmethod
     def to_odd(number):
@@ -60,6 +60,10 @@ class Projection:
 
     def get_projection(self):
         raise NotImplementedError
+
+    def get_stroke_width(self, rows_expected):
+        letter_height = self.image.shape[0] * 0.95 / rows_expected
+        return self.to_odd(letter_height / 10)
 
     @staticmethod
     def normalize(arr):

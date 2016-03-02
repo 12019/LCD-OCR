@@ -4,23 +4,13 @@
     <bookmark url="file://$PROJECT_DIR$/italics/font_normalizer.py" line="38" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1d8a138-43f8-4415-849d-0bfd81b4b314" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projection/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projection/abstract.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projection/adaptive.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projection/binary.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projection/colorful.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/croppable/projection.py" afterPath="" />
+    <list default="true" id="b1d8a138-43f8-4415-849d-0bfd81b4b314" name="Default" comment="tests fixed, todos added">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/opencv.iml" afterPath="$PROJECT_DIR$/.idea/opencv.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/croppable/area_factory.py" afterPath="$PROJECT_DIR$/croppable/area_factory.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/croppable/croppable_image.py" afterPath="$PROJECT_DIR$/croppable/croppable_image.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/italics/font_normalizer.py" afterPath="$PROJECT_DIR$/italics/font_normalizer.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/italics/shear_tool.py" afterPath="$PROJECT_DIR$/italics/shear_tool.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utilities/plotter.py" afterPath="$PROJECT_DIR$/utilities/plotter.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utilities/rectangle.py" afterPath="$PROJECT_DIR$/utilities/rectangle.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/visible/lcd.py" afterPath="$PROJECT_DIR$/visible/lcd.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/visible/photo.py" afterPath="$PROJECT_DIR$/visible/photo.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/visible/single_row.py" afterPath="$PROJECT_DIR$/visible/single_row.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ocr.py" afterPath="$PROJECT_DIR$/ocr.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projection/abstract.py" afterPath="$PROJECT_DIR$/projection/abstract.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projection/adaptive.py" afterPath="$PROJECT_DIR$/projection/adaptive.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projection/binary.py" afterPath="$PROJECT_DIR$/projection/binary.py" />
     </list>
     <ignored path="opencv.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,47 +31,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="lcd.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/visible/lcd.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1291866">
-              <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shear_tool.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/italics/shear_tool.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="photo.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/visible/photo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="abstract.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projection/abstract.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="49" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+              <caret line="65" column="45" selection-start-line="65" selection-start-column="45" selection-end-line="65" selection-end-column="45" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adaptive.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projection/adaptive.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -91,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/projection/binary.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -99,48 +67,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="area_factory.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/croppable/area_factory.py">
+      <file leaf-file-name="ocr.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ocr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.16746412">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="croppable_image.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/croppable/croppable_image.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="76" column="14" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="single_row.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/visible/single_row.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rectangle.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utilities/rectangle.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="84" column="44" selection-start-line="84" selection-start-column="44" selection-end-line="84" selection-end-column="44" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -174,7 +108,6 @@
         <option value="$PROJECT_DIR$/visible/color_bins.py" />
         <option value="$PROJECT_DIR$/italics/AngleFinder.py" />
         <option value="$PROJECT_DIR$/italics/FontNormalizer.py" />
-        <option value="$PROJECT_DIR$/ocr.py" />
         <option value="$PROJECT_DIR$/coordinates.py" />
         <option value="$PROJECT_DIR$/visible/video.py" />
         <option value="$PROJECT_DIR$/utils/utils.py" />
@@ -200,17 +133,18 @@
         <option value="$PROJECT_DIR$/utilities/utils.py" />
         <option value="$PROJECT_DIR$/projection/projection.py" />
         <option value="$PROJECT_DIR$/projection/abstractprojection.py" />
-        <option value="$PROJECT_DIR$/projection/binary.py" />
-        <option value="$PROJECT_DIR$/projection/adaptive.py" />
         <option value="$PROJECT_DIR$/projection/colorful.py" />
         <option value="$PROJECT_DIR$/croppable/area_factory.py" />
         <option value="$PROJECT_DIR$/croppable/croppable_image.py" />
         <option value="$PROJECT_DIR$/visible/single_row.py" />
         <option value="$PROJECT_DIR$/visible/photo.py" />
         <option value="$PROJECT_DIR$/italics/shear_tool.py" />
-        <option value="$PROJECT_DIR$/projection/abstract.py" />
         <option value="$PROJECT_DIR$/utilities/rectangle.py" />
         <option value="$PROJECT_DIR$/visible/lcd.py" />
+        <option value="$PROJECT_DIR$/projection/abstract.py" />
+        <option value="$PROJECT_DIR$/projection/adaptive.py" />
+        <option value="$PROJECT_DIR$/projection/binary.py" />
+        <option value="$PROJECT_DIR$/ocr.py" />
       </list>
     </option>
   </component>
@@ -230,17 +164,9 @@
             <id />
           </State>
           <State>
-            <id>General</id>
-          </State>
-          <State>
             <id>Python</id>
           </State>
         </expanded-state>
-        <selected-state>
-          <State>
-            <id>PyIncorrectDocstringInspection</id>
-          </State>
-        </selected-state>
       </profile-state>
     </entry>
   </component>
@@ -269,7 +195,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Problems" />
         <subPane subId="Project Files">
@@ -279,20 +204,6 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="LCD-OCR">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="LCD-OCR">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="visible">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -325,22 +236,9 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="LCD-OCR">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="croppable">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -393,8 +291,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="opencv" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="opencv" />
+      </console-settings>
+    </option>
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -409,26 +315,7 @@
       <recent name="$PROJECT_DIR$/img/tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Travis CI: local">
-    <configuration default="false" name="Doctests in croppable_image" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="opencv" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/croppable/croppable_image.py" />
-      <option name="CLASS_NAME" value="CroppableImage" />
-      <option name="METHOD_NAME" value="get_custom_shape" />
-      <option name="FOLDER_NAME" value="$PROJECT_DIR$" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="*.py" />
-      <option name="USE_PATTERN" value="true" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Doctests in BinaryProjection">
     <configuration default="false" name="Doctests in SingleRow" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -467,25 +354,6 @@
       <option name="USE_PATTERN" value="true" />
       <method />
     </configuration>
-    <configuration default="false" name="Doctests in Photo" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="/usr/bin/python2.7" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="opencv" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/visible/photo.py" />
-      <option name="CLASS_NAME" value="Photo" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="$PROJECT_DIR$" />
-      <option name="TEST_TYPE" value="TEST_CLASS" />
-      <option name="PATTERN" value="*.py" />
-      <option name="USE_PATTERN" value="true" />
-      <method />
-    </configuration>
     <configuration default="false" name="Doctests in rectangle" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -501,6 +369,46 @@
       <option name="METHOD_NAME" value="crop_borders" />
       <option name="FOLDER_NAME" value="$PROJECT_DIR$" />
       <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="*.py" />
+      <option name="USE_PATTERN" value="true" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Nosetests in LCD-OCR" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="--with-doctest" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="/usr/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="opencv" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="$PROJECT_DIR$" />
+      <option name="TEST_TYPE" value="TEST_FOLDER" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Doctests in BinaryProjection" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="/usr/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="opencv" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/projection/binary.py" />
+      <option name="CLASS_NAME" value="BinaryProjection" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="$PROJECT_DIR$" />
+      <option name="TEST_TYPE" value="TEST_CLASS" />
       <option name="PATTERN" value="*.py" />
       <option name="USE_PATTERN" value="true" />
       <method />
@@ -649,19 +557,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.Travis CI: local" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Doctests in croppable_image" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Doctests in SingleRow" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Doctests in LCD" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Doctests in Photo" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Doctests in rectangle" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Doctests in SingleRow" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Doctests in LCD" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Doctests in rectangle" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetests in LCD-OCR" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Doctests in BinaryProjection" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Doctests in rectangle" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Doctests in Photo" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Doctests in LCD" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Doctests in SingleRow" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Doctests in croppable_image" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Doctests in BinaryProjection" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Doctests in LCD" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Doctests in SingleRow" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetests in LCD-OCR" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Doctests in rectangle" />
       </list>
     </recent_temporary>
   </component>
@@ -901,42 +809,48 @@
       <option name="project" value="LOCAL" />
       <updated>1456600362518</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="tests fixed, todos added">
+      <created>1456672248039</created>
+      <option name="number" value="00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1456672248039</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Doctest_Rectangle_crop_borders - 2016.02.28 at 18h 08m 55s.xml">
-      <configuration name="Doctest Rectangle.crop_borders" configurationId="tests" />
+    <history-entry file="Doctests_in_BinaryProjection - 2016.03.02 at 18h 48m 51s.xml">
+      <configuration name="Doctests in BinaryProjection" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_LCD - 2016.02.28 at 17h 43m 07s.xml">
-      <configuration name="Doctests in LCD" configurationId="tests" />
+    <history-entry file="Doctests_in_BinaryProjection - 2016.03.02 at 18h 49m 34s.xml">
+      <configuration name="Doctests in BinaryProjection" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_LCD - 2016.02.28 at 17h 44m 09s.xml">
-      <configuration name="Doctests in LCD" configurationId="tests" />
+    <history-entry file="Doctests_in_BinaryProjection - 2016.03.02 at 18h 50m 17s.xml">
+      <configuration name="Doctests in BinaryProjection" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_LCD - 2016.02.28 at 17h 44m 47s.xml">
-      <configuration name="Doctests in LCD" configurationId="tests" />
+    <history-entry file="Doctests_in_BinaryProjection - 2016.03.02 at 18h 50m 43s.xml">
+      <configuration name="Doctests in BinaryProjection" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_LCD - 2016.02.28 at 17h 46m 58s.xml">
-      <configuration name="Doctests in LCD" configurationId="tests" />
+    <history-entry file="Doctests_in_BinaryProjection - 2016.03.02 at 18h 53m 05s.xml">
+      <configuration name="Doctests in BinaryProjection" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_Photo - 2016.02.28 at 17h 45m 52s.xml">
-      <configuration name="Doctests in Photo" configurationId="tests" />
+    <history-entry file="Doctests_in_BinaryProjection - 2016.03.02 at 18h 53m 41s.xml">
+      <configuration name="Doctests in BinaryProjection" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_Photo - 2016.02.28 at 17h 47m 15s.xml">
-      <configuration name="Doctests in Photo" configurationId="tests" />
+    <history-entry file="Doctests_in_BinaryProjection - 2016.03.02 at 18h 55m 18s.xml">
+      <configuration name="Doctests in BinaryProjection" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_SingleRow - 2016.02.28 at 17h 42m 23s.xml">
-      <configuration name="Doctests in SingleRow" configurationId="tests" />
+    <history-entry file="Doctests_in_BinaryProjection - 2016.03.02 at 18h 56m 51s.xml">
+      <configuration name="Doctests in BinaryProjection" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_SingleRow - 2016.02.28 at 17h 42m 48s.xml">
-      <configuration name="Doctests in SingleRow" configurationId="tests" />
+    <history-entry file="Doctests_in_BinaryProjection - 2016.03.02 at 18h 57m 45s.xml">
+      <configuration name="Doctests in BinaryProjection" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_rectangle - 2016.02.28 at 18h 09m 04s.xml">
-      <configuration name="Doctests in rectangle" configurationId="tests" />
+    <history-entry file="Doctests_in_BinaryProjection - 2016.03.02 at 18h 59m 10s.xml">
+      <configuration name="Doctests in BinaryProjection" configurationId="tests" />
     </history-entry>
   </component>
-  <component name="TodoView" selected-index="4">
+  <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -950,13 +864,14 @@
     <editor active="false" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19637139" sideWeight="0.66818875" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19850586" sideWeight="0.66057837" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295099" sideWeight="0.4974227" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.50213444" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295099" sideWeight="0.5032017" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32638165" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.49786553" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295099" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295099" sideWeight="0.4967983" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31491137" sideWeight="0.4967983" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19637139" sideWeight="0.33181125" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19850586" sideWeight="0.3394216" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38164756" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24935567" sideWeight="0.50641024" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3253389" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -967,7 +882,6 @@
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="100" y="152" width="1710" height="856" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32638165" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1028,15 +942,34 @@
     <MESSAGE value="Imports error. Before reverting" />
     <MESSAGE value="multiple refactorings. broken almost everywhere" />
     <MESSAGE value="still broken" />
-    <option name="LAST_COMMIT_MESSAGE" value="still broken" />
+    <MESSAGE value="tests fixed, todos added" />
+    <option name="LAST_COMMIT_MESSAGE" value="tests fixed, todos added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="130" />
+      <option name="time" value="131" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/visible/single_row.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utilities/rectangle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="84" column="44" selection-start-line="84" selection-start-column="44" selection-end-line="84" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/img/38.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1209,18 +1142,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ocr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1249,13 +1174,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45805368">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/__init__.py">
@@ -1279,29 +1204,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.93779904">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projection/adaptive.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7368421">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projection/binary.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1353,16 +1255,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projection/abstract.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utilities/rectangle.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1373,8 +1265,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/visible/lcd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1291866">
-          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="53" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projection/abstract.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="65" column="45" selection-start-line="65" selection-start-column="45" selection-end-line="65" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projection/adaptive.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projection/binary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16746412">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
