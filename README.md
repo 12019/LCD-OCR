@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/php5engineer/LCD-OCR.svg?branch=master)](https://travis-ci.org/php5engineer/LCD-OCR)
+
 === LCD OCR ===
 
 Finds LCD display on a digital photo and prepares it's fragments for OCR.  
